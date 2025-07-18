@@ -5,7 +5,6 @@ import { Menu, X } from "lucide-react";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import ThemeSwitch from "../common/theme-switch";
-import { buttonVariants } from "@/components/ui/button";
 
 const navItems = [
   {
@@ -26,14 +25,38 @@ const navItems = [
   },
 ];
 
-const Navbar1 = () => {
+const Navbar1 = ({ scrollProgress }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
+  const navbarWidth = `${100 - scrollProgress * 30}%`;
+  const padding = 1.5 - scrollProgress * 0.75;
+
   return (
-    <div className="flex justify-center w-full py-6 px-4">
-      <div className="flex items-center justify-between px-6 py-3 bg-white rounded-full shadow-lg w-full max-w-3xl relative z-10">
+    <motion.div
+      className="flex justify-center w-full px-4"
+      style={{
+        paddingTop: `${padding}rem`,
+        paddingBottom: `${padding}rem`,
+      }}
+    >
+      <motion.div
+        className="flex items-center justify-between px-6 py-3 rounded-full relative z-10 transition-all duration-200"
+        style={{
+          width: navbarWidth,
+          maxWidth: "1200px",
+          background: `rgba(255, 255, 255, ${0.7 + scrollProgress * 0.2})`,
+          backdropFilter: `blur(${10 + scrollProgress * 5}px)`,
+          WebkitBackdropFilter: `blur(${10 + scrollProgress * 5}px)`,
+          boxShadow: `0 ${4 + scrollProgress * 6}px ${
+            20 + scrollProgress * 10
+          }px rgba(0, 0, 0, ${0.1 + scrollProgress * 0.05})`,
+          border: `1px solid rgba(255, 255, 255, ${
+            0.3 + scrollProgress * 0.2
+          })`,
+        }}
+      >
         <div className="flex items-center">
           <motion.div
             className="w-8 h-8 mr-6"
@@ -95,7 +118,10 @@ const Navbar1 = () => {
           transition={{ duration: 0.3, delay: 0.2 }}
           whileHover={{ scale: 1.05 }}
         >
-          <a href="#" className={buttonVariants()}>
+          <a
+            href="#"
+            className="inline-flex items-center justify-center px-5 py-2 text-sm text-white rounded-full transition-colors bg-primary"
+          >
             Get Started
           </a>
           <ThemeSwitch />
@@ -109,12 +135,18 @@ const Navbar1 = () => {
         >
           <Menu className="h-6 w-6 text-gray-900" />
         </motion.button>
-      </div>
+      </motion.div>
+
       {/* Mobile Menu Overlay */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="fixed inset-0 bg-white z-50 pt-24 px-6 md:hidden"
+            className="fixed inset-0 z-50 pt-24 px-6 md:hidden"
+            style={{
+              background: "rgba(255, 255, 255, 0.95)",
+              backdropFilter: "blur(20px)",
+              WebkitBackdropFilter: "blur(20px)",
+            }}
             initial={{ opacity: 0, x: "100%" }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: "100%" }}
@@ -167,7 +199,7 @@ const Navbar1 = () => {
           </motion.div>
         )}
       </AnimatePresence>
-    </div>
+    </motion.div>
   );
 };
 
