@@ -6,7 +6,9 @@ export default function MainLayout() {
   return (
     <>
       <Header />
-      <Outlet />
+      <div className="flex justify-center flex-col items-center">
+        <Outlet />
+      </div>
       <Footer />
     </>
   );
