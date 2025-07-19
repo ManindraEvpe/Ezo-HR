@@ -1,18 +1,25 @@
+import { useEffect } from "react";
 import { Separator } from "@/components/ui/separator";
 import { Badge } from "@/components/ui/badge";
 
 export default function PrivacyPolicy() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
-    <main className="min-h-screen w-full bg-gradient-to-b to-primary/20 from-transparent">
+    <main className="min-h-screen w-full">
       <div className="container mx-auto px-4 py-12 max-w-4xl">
         {/* Header Section */}
         <div className="text-center mb-12">
-          <h1 className="text-5xl font-bold tracking-tight mb-4 font-secondary">
-            Privacy Policy
-          </h1>
-          <Badge variant="secondary" className="text-sm">
+          <Badge
+            variant="outline"
+            className="p-2 px-4 rounded-full bg-background"
+          >
             Last updated: July 11, 2025
           </Badge>
+          <h1 className="text-5xl font-bold tracking-tight mt-4 font-secondary">
+            Privacy Policy
+          </h1>
         </div>
 
         {/* Introduction */}
@@ -425,7 +432,7 @@ export default function PrivacyPolicy() {
           </div>
 
           {/* Contact Section */}
-          <div className="bg-background p-6 rounded-lg">
+          <div className="bg-primary/10 p-6 rounded-lg">
             <h3 className="text-2xl font-semibold mb-2 font-secondary">
               Contact Us
             </h3>

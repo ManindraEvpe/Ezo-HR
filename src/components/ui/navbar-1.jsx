@@ -5,34 +5,57 @@ import { Menu, X } from "lucide-react";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import ThemeSwitch from "../common/theme-switch";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
 const navItems = [
   {
     title: "Solutions",
-    id: "/#solutions",
+    id: "solutions",
+    isHash: true,
   },
   {
     title: "Certifications",
-    id: "/#certifications",
+    id: "certifications",
+    isHash: true,
   },
   {
     title: "Products",
-    id: "/#products",
+    id: "products",
+    isHash: true,
   },
   {
     title: "Pricing",
-    id: "/#pricing",
+    id: "pricing",
+    isHash: true,
   },
   {
     title: "Contact Us",
-    id: "/#contact-us",
+    id: "/contact-us",
+    isHash: false,
   },
 ];
 
 const Navbar1 = ({ scrollProgress }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const toggleMenu = () => setIsOpen(!isOpen);
+
+  const handleNavClick = (e, item) => {
+    if (item.isHash) {
+      e.preventDefault();
+
+      if (location.pathname !== "/") {
+        navigate("/", { state: { scrollToId: item.id } });
+      } else {
+        const element = document.getElementById(item.id);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }
+    }
+  };
 
   const navbarWidth = `${100 - scrollProgress * 30}%`;
   const padding = 1.5 - scrollProgress * 0.75;
@@ -61,9 +84,9 @@ const Navbar1 = ({ scrollProgress }) => {
           })`,
         }}
       >
-        <a className="flex-center" href={"/"}>
+        <Link className="flex-center" to={"/"}>
           <img src="/logo-png.png" className="h-9" alt="EzoHR" />
-        </a>
+        </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
@@ -75,12 +98,22 @@ const Navbar1 = ({ scrollProgress }) => {
               transition={{ duration: 0.3 }}
               whileHover={{ scale: 1.05 }}
             >
-              <a
-                href={item?.id}
-                className="text-sm text-gray-900 hover:text-gray-600 transition-colors font-medium"
-              >
-                {item?.title}
-              </a>
+              {item.isHash ? (
+                <a
+                  href={`#${item.id}`}
+                  onClick={(e) => handleNavClick(e, item)}
+                  className="text-sm text-gray-900 hover:text-gray-600 transition-colors font-medium cursor-pointer"
+                >
+                  {item?.title}
+                </a>
+              ) : (
+                <Link
+                  to={item.id}
+                  className="text-sm text-gray-900 hover:text-gray-600 transition-colors font-medium"
+                >
+                  {item?.title}
+                </Link>
+              )}
             </motion.div>
           ))}
         </nav>
@@ -93,12 +126,12 @@ const Navbar1 = ({ scrollProgress }) => {
           transition={{ duration: 0.3, delay: 0.2 }}
           whileHover={{ scale: 1.05 }}
         >
-          <a
-            href="https://ezohr.com/login"
+          <Link
+            to="https://ezohr.com/login"
             className="inline-flex items-center justify-center px-5 py-2 text-sm text-white rounded-full transition-colors bg-primary"
           >
             Get Started
-          </a>
+          </Link>
           <ThemeSwitch />
         </motion.div>
 
@@ -146,13 +179,26 @@ const Navbar1 = ({ scrollProgress }) => {
                   transition={{ delay: i * 0.1 + 0.1 }}
                   exit={{ opacity: 0, x: 20 }}
                 >
-                  <a
-                    href={item.id}
-                    className="text-base text-gray-900 font-medium"
-                    onClick={toggleMenu}
-                  >
-                    {item?.title}
-                  </a>
+                  {item.isHash ? (
+                    <a
+                      href={`#${item.id}`}
+                      className="text-base text-gray-900 font-medium cursor-pointer"
+                      onClick={(e) => {
+                        handleNavClick(e, item);
+                        toggleMenu();
+                      }}
+                    >
+                      {item?.title}
+                    </a>
+                  ) : (
+                    <Link
+                      to={item.id}
+                      className="text-base text-gray-900 font-medium"
+                      onClick={toggleMenu}
+                    >
+                      {item?.title}
+                    </Link>
+                  )}
                 </motion.div>
               ))}
               <motion.div
@@ -162,13 +208,13 @@ const Navbar1 = ({ scrollProgress }) => {
                 exit={{ opacity: 0, y: 20 }}
                 className="pt-6"
               >
-                <a
-                  href="#"
+                <Link
+                  to="https://ezohr.com/login"
                   className="inline-flex items-center justify-center w-full px-5 py-3 text-base text-white bg-black rounded-full hover:bg-gray-800 transition-colors "
                   onClick={toggleMenu}
                 >
                   Get Started
-                </a>
+                </Link>
               </motion.div>
             </div>
           </motion.div>

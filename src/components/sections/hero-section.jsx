@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, ArrowUpRight, Check } from "lucide-react";
 import { AuroraText } from "@/components/magicui/aurora-text";
 import { SparklesText } from "@/components/magicui/sparkles-text";
+import { Link } from "react-router-dom";
 
 export default function HeroSection() {
   return (
@@ -40,13 +41,13 @@ export default function HeroSection() {
               ease, so you can focus on growth.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="https://ezohr.com/login">
+              <Link to="https://ezohr.com/login">
                 <Button size="lg" className="rounded-full h-12 px-8 text-base">
                   Start Free Trial
                   <ArrowRight className="ml-2 size-4" />
                 </Button>
-              </a>
-              <a href="#contact-us">
+              </Link>
+              <Link to="/contact-us">
                 <Button
                   size="lg"
                   variant="outline"
@@ -54,7 +55,7 @@ export default function HeroSection() {
                 >
                   Book a Demo
                 </Button>
-              </a>
+              </Link>
             </div>
             <div className="flex items-center justify-center gap-4 mt-6 text-sm text-muted-foreground">
               <div className="flex items-center gap-1">
@@ -80,7 +81,6 @@ export default function HeroSection() {
           >
             <div className="rounded-xl overflow-hidden shadow-2xl border border-border/40 bg-gradient-to-b from-background to-muted/20">
               <img
-                // src="https://cdn.dribbble.com/userupload/12302729/file/original-fa372845e394ee85bebe0389b9d86871.png?resize=1504x1128&vertical=center"
                 src="/site-demo.png"
                 width={1280}
                 height={720}

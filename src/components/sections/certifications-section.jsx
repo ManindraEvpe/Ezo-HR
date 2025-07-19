@@ -13,7 +13,7 @@ export default function CertificationsSection() {
       className="container pt-24 flex overflow-hidden flex-wrap lg:flex-nowrap"
       id="certifications"
     >
-      <div className="p-20 border rounded-md rounded-b-none lg:rounded-bl-md lg:rounded-tr-none lg:border-r-0">
+      <div className="p-20 border rounded-md rounded-b-none lg:rounded-bl-md lg:rounded-tr-none lg:border-r-0 bg-background">
         <h4 className="text-3xl md:text-4xl font-bold tracking-tight font-secondary">
           Our certifications say it all.
         </h4>
@@ -33,7 +33,7 @@ export default function CertificationsSection() {
       [&>div>img]:cursor-pointer
       "
       >
-        <div className="col-span-3 flex-center border border-t-0 lg:border-t lg:rounded-r-md lg:rounded-br-none">
+        <div className="col-span-3 flex-center border border-t-0 lg:border-t lg:rounded-r-md lg:rounded-br-none bg-background">
           <Dialog>
             <DialogTrigger>
               <img src="/dun-img.png" className="h-12" alt="" />
@@ -49,7 +49,7 @@ export default function CertificationsSection() {
             </DialogContent>
           </Dialog>
         </div>
-        <div className="border border-t-0 border-r-0 rounded-bl-md lg:rounded-bl-none">
+        <div className="border border-t-0 border-r-0 rounded-bl-md lg:rounded-bl-none bg-background">
           <Dialog>
             <DialogTrigger>
               <img src="/iso-img.png" className="h-24" alt="" />
@@ -62,7 +62,7 @@ export default function CertificationsSection() {
             </DialogContent>
           </Dialog>
         </div>
-        <div className="border border-r-0 border-t-0">
+        <div className="border border-r-0 border-t-0 bg-background">
           <Dialog>
             <DialogTrigger>
               <img src="/iso-2-img.png" className="h-24" alt="" />
@@ -75,7 +75,7 @@ export default function CertificationsSection() {
             </DialogContent>
           </Dialog>
         </div>
-        <div className="border border-t-0 rounded-br-md">
+        <div className="border border-t-0 rounded-br-md bg-background">
           <Dialog>
             <DialogTrigger>
               <img src="/nqcab-img.png" className="h-24" alt="" />

@@ -1,10 +1,16 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+  CardContent,
+} from "@/components/ui/card";
+import { MailCheck, Headset } from "lucide-react";
 
 import ContactUsForm from "@/components/forms/contact-us-form";
-
-import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 
 export default function ContactUsSection() {
   return (
@@ -13,113 +19,107 @@ export default function ContactUsSection() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
-      className="py-16 md:py-24"
-      id="contact-us"
+      className="py-16 md:py-16"
+      // id="contact-us"
     >
-      <div className="container mx-auto px-4 md:px-6 2xl:max-w-[1400px]">
-        <div className="grid gap-8 lg:grid-cols-2 items-center">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={{
-              hidden: {},
-              visible: { transition: { staggerChildren: 0.1 } },
-            }}
-            className="flex flex-col justify-center space-y-4"
-          >
-            <motion.div variants={fadeUp} className="inline-block">
-              <span className="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors bg-primary/10 text-primary">
-                Watch How It Works
-              </span>
-            </motion.div>
+      <div className="flex flex-col items-center mb-6">
+        <Badge
+          className="p-2 rounded-full bg-background text-sm px-4"
+          variant="outline"
+        >
+          Contact Us
+        </Badge>
+        <h2 className="text-3xl md:text-4xl font-bold tracking-tight font-secondary mt-4">
+          Get in Touch with Our Team
+        </h2>
+        <p className="max-w-4xl text-muted-foreground md:text-lg text-center mt-2">
+          Whether you need product guidance, sales assistance, or customer
+          support we’re ready to help. Connect with the right team and expect a
+          response within 1–2 business days.
+        </p>
+      </div>
 
-            <motion.div variants={fadeUp} className="space-y-2">
-              <h2 className="text-3xl font-bold sm:text-4xl font-secondary">
-                See our platform in action
-              </h2>
-              <p className="text-muted-foreground md:text-xl">
-                Our short video walkthrough demonstrates how easy it is to get
-                started and shows the key features that make our solution stand
-                out.
-              </p>
-            </motion.div>
+      <div className="relative text-primary h-px w-full my-12 max-w-2xl mx-auto">
+        <div className="h-px w-full bg-[repeating-linear-gradient(90deg,transparent,transparent_4px,#3b82f6_4px,#3b82f6_10px)] [mask-image:linear-gradient(90deg,transparent,black_25%,black_75%,transparent)]"></div>
+      </div>
 
-            <motion.ul variants={fadeUp} className="space-y-2">
-              {[
-                "Quick setup process",
-                "Intuitive user interface",
-                "Advanced features walkthrough",
-              ].map((text, i) => (
-                <motion.li
-                  key={i}
-                  variants={fadeUp}
-                  className="flex items-center gap-2"
-                >
-                  <CheckIcon />
-                  <span>{text}</span>
-                </motion.li>
-              ))}
-            </motion.ul>
+      <div className="container mx-auto px-6 md:px-10 2xl:max-w-[1100px]">
+        <div className="grid lg:grid-cols-2 gap-8 items-stretch">
+          {/* Left Column - Contact Cards */}
+          <div className="flex flex-col gap-6 h-full">
+            <Card className="flex flex-col flex-grow h-full shadow-lg">
+              <CardHeader>
+                <CardTitle className="text-lg">Support Team</CardTitle>
+                <CardDescription>
+                  Need help with your account, services, or have technical
+                  questions? Our support team is here to assist.
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-2 text-sm mt-auto">
+                <div className="flex items-center gap-2">
+                  <MailCheck className="size-5 text-muted-foreground" />
+                  <a
+                    href="mailto:support@ezohr.com"
+                    className="hover:underline"
+                  >
+                    support@ezohr.com
+                  </a>
+                </div>
+                <div className="flex items-center gap-2">
+                  <MailCheck className="size-5 text-muted-foreground" />
+                  <a
+                    href="mailto:contact@ezohr.com"
+                    className="hover:underline"
+                  >
+                    contact@ezohr.com
+                  </a>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Headset className="size-5 text-muted-foreground" />
+                  <a href="tel:+91-9652009244" className="hover:underline">
+                    +91-9652009244
+                  </a>
+                </div>
+              </CardContent>
+            </Card>
 
-            <motion.div
-              variants={fadeUp}
-              className="flex flex-col sm:flex-row sm:items-center gap-3 pt-2"
-            >
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <Button size="lg" asChild>
-                  <Link to="#">Try It Free</Link>
-                </Button>
-              </motion.div>
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <Button variant="outline" size="lg" asChild>
-                  <Link to="#">Schedule Demo</Link>
-                </Button>
-              </motion.div>
-            </motion.div>
-          </motion.div>
+            <Card className="flex flex-col flex-grow h-full shadow-lg">
+              <CardHeader>
+                <CardTitle className="text-lg">Sales Team</CardTitle>
+                <CardDescription>
+                  Interested in learning more about our solutions or requesting
+                  a demo? Get in touch with our sales experts.
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-2 text-sm mt-auto">
+                <div className="flex items-center gap-2">
+                  <MailCheck className="size-5 text-muted-foreground" />
+                  <a href="mailto:sales@ezohr.com" className="hover:underline">
+                    sales@ezohr.com
+                  </a>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Headset className="size-5 text-muted-foreground" />
+                  <a href="tel:+91-9030505922" className="hover:underline">
+                    +91-9030505922
+                  </a>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
 
+          {/* Right Column - Contact Form */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="relative aspect-video rounded-xl border shadow-lg"
+            className="relative h-full min-h-[500px] rounded-xl border shadow-lg flex items-center"
           >
             <ContactUsForm />
           </motion.div>
         </div>
       </div>
     </motion.section>
-  );
-}
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.4 } },
-};
-
-function CheckIcon() {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className="h-5 w-5 text-primary"
-    >
-      <polyline points="20 6 9 17 4 12" />
-    </svg>
   );
 }
