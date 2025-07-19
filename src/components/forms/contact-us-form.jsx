@@ -6,7 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 
 export default function ContactUsForm() {
   return (
-    <Card>
+    <Card className="border-0">
       <CardContent className="p-6">
         <h2 className="mb-8 text-xl font-semibold">Fill in the form</h2>
         <form>

@@ -29,7 +29,7 @@ export default function ContactUsSection() {
             className="flex flex-col justify-center space-y-4"
           >
             <motion.div variants={fadeUp} className="inline-block">
-              <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors bg-primary/10 text-primary">
+              <span className="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors bg-primary/10 text-primary">
                 Watch How It Works
               </span>
             </motion.div>
