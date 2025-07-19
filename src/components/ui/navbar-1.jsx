@@ -46,9 +46,18 @@ const Navbar1 = ({ scrollProgress }) => {
     if (item.isHash) {
       e.preventDefault();
 
+      // If we're not on the home page, navigate there first
       if (location.pathname !== "/") {
-        navigate("/", { state: { scrollToId: item.id } });
+        navigate("/");
+        // Wait for navigation to complete before scrolling
+        setTimeout(() => {
+          const element = document.getElementById(item.id);
+          if (element) {
+            element.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        }, 100);
       } else {
+        // We're already on the home page, just scroll
         const element = document.getElementById(item.id);
         if (element) {
           element.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -84,7 +93,17 @@ const Navbar1 = ({ scrollProgress }) => {
           })`,
         }}
       >
-        <Link className="flex-center" to={"/"}>
+        <Link
+          className="flex-center"
+          to={"/"}
+          onClick={(e) =>
+            handleNavClick(e, {
+              title: "",
+              id: "hero-section",
+              isHash: true,
+            })
+          }
+        >
           <img src="/logo-png.png" className="h-9" alt="EzoHR" />
         </Link>
 
