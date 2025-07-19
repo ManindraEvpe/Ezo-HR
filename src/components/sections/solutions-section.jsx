@@ -1,8 +1,17 @@
-// eslint-disable-next-line no-unused-vars
-import { motion } from "framer-motion";
-import { BarChart, Layers, Shield, Star, Users, Zap } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion";
+import {
+  Building2,
+  Calendar,
+  FileText,
+  GitBranchPlus,
+  IdCardLanyard,
+  ReceiptText,
+  SquareCheck,
+  Users,
+} from "lucide-react";
 
 export default function SolutionsSection() {
   const container = {
@@ -22,45 +31,57 @@ export default function SolutionsSection() {
 
   const features = [
     {
-      title: "Smart Automation",
+      title: "Branch Management",
       description:
-        "Automate repetitive tasks and workflows to save time and reduce errors.",
-      icon: <Zap className="size-5" />,
+        "Easily manage multiple branches with centralized control and visibility.",
+      icon: <GitBranchPlus className="size-5" />,
     },
     {
-      title: "Advanced Analytics",
+      title: "Employee Management",
       description:
-        "Gain valuable insights with real-time data visualization and reporting.",
-      icon: <BarChart className="size-5" />,
+        "Streamline employee onboarding, attendance, and performance tracking.",
+      icon: <IdCardLanyard className="size-5" />,
     },
     {
-      title: "Team Collaboration",
+      title: "Organization Policies",
       description:
-        "Work together seamlessly with integrated communication tools.",
+        "Create and enforce organization policies to maintain compliance and consistency.",
+      icon: <Building2 className="size-5" />,
+    },
+    {
+      title: "Role Management",
+      description:
+        "Define and manage roles and permissions for secure access control.",
       icon: <Users className="size-5" />,
     },
     {
-      title: "Enterprise Security",
+      title: "Attendance Management",
       description:
-        "Keep your data safe with end-to-end encryption and compliance features.",
-      icon: <Shield className="size-5" />,
+        "Track employee attendance effortlessly with real-time updates.",
+      icon: <SquareCheck className="size-5" />,
     },
     {
-      title: "Seamless Integration",
+      title: "Leave & Holiday Management",
       description:
-        "Connect with your favorite tools through our extensive API ecosystem.",
-      icon: <Layers className="size-5" />,
+        "Simplify leave requests and holiday management with automated workflows.",
+      icon: <Calendar className="size-5" />,
     },
     {
-      title: "24/7 Support",
+      title: "Payroll Management",
       description:
-        "Get help whenever you need it with our dedicated support team.",
-      icon: <Star className="size-5" />,
+        "Automate payroll calculations and ensure compliance with tax regulations.",
+      icon: <ReceiptText className="size-5" />,
+    },
+    {
+      title: "Reports",
+      description:
+        "Generate insightful reports to analyze employee performance and business metrics.",
+      icon: <FileText className="size-5" />,
     },
   ];
 
   return (
-    <section id="features" className="w-full py-20 md:py-32">
+    <section id="solutions" className="w-full py-20 md:py-32">
       <div className="container px-4 md:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -73,7 +94,7 @@ export default function SolutionsSection() {
             className="rounded-full px-4 py-1.5 text-sm font-medium"
             variant="secondary"
           >
-            Features
+            Solutions
           </Badge>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
             Everything You Need to Succeed

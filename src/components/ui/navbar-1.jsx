@@ -9,19 +9,23 @@ import ThemeSwitch from "../common/theme-switch";
 const navItems = [
   {
     title: "Solutions",
-    id: "#solutions",
+    id: "/#solutions",
   },
   {
-    title: "Product",
-    id: "#product",
+    title: "Certifications",
+    id: "/#certifications",
+  },
+  {
+    title: "Products",
+    id: "/#products",
   },
   {
     title: "Pricing",
-    id: "#pricing",
+    id: "/#pricing",
   },
   {
     title: "Contact Us",
-    id: "#contact-us",
+    id: "/#contact-us",
   },
 ];
 
@@ -57,38 +61,9 @@ const Navbar1 = ({ scrollProgress }) => {
           })`,
         }}
       >
-        <div className="flex items-center">
-          <motion.div
-            className="w-8 h-8 mr-6"
-            initial={{ scale: 0.8 }}
-            animate={{ scale: 1 }}
-            whileHover={{ rotate: 10 }}
-            transition={{ duration: 0.3 }}
-          >
-            <svg
-              width="32"
-              height="32"
-              viewBox="0 0 32 32"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="16" cy="16" r="16" fill="url(#paint0_linear)" />
-              <defs>
-                <linearGradient
-                  id="paint0_linear"
-                  x1="0"
-                  y1="0"
-                  x2="32"
-                  y2="32"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stopColor="#FF9966" />
-                  <stop offset="1" stopColor="#FF5E62" />
-                </linearGradient>
-              </defs>
-            </svg>
-          </motion.div>
-        </div>
+        <a className="flex-center" href={"/"}>
+          <img src="/logo-png.png" className="h-9" alt="EzoHR" />
+        </a>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
@@ -119,7 +94,7 @@ const Navbar1 = ({ scrollProgress }) => {
           whileHover={{ scale: 1.05 }}
         >
           <a
-            href="#"
+            href="https://ezohr.com/login"
             className="inline-flex items-center justify-center px-5 py-2 text-sm text-white rounded-full transition-colors bg-primary"
           >
             Get Started

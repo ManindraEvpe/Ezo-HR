@@ -4,7 +4,10 @@ import { Badge } from "@/components/ui/badge";
 
 export default function ProductsSection() {
   return (
-    <section className="w-full py-20 md:py-32 bg-muted/30 relative overflow-hidden">
+    <section
+      id="products"
+      className="w-full py-20 md:py-32 bg-muted/30 relative overflow-hidden"
+    >
       <div className="absolute inset-0 -z-10 h-full w-full bg-white dark:bg-black bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#1f1f1f_1px,transparent_1px),linear-gradient(to_bottom,#1f1f1f_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,#000_40%,transparent_100%)]"></div>
 
       <div className="container px-4 md:px-6 relative">
@@ -19,14 +22,14 @@ export default function ProductsSection() {
             className="rounded-full px-4 py-1.5 text-sm font-medium"
             variant="secondary"
           >
-            How It Works
+            Products
           </Badge>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-            Simple Process, Powerful Results
+            Discover Our Suite of Powerful Products
           </h2>
           <p className="max-w-[800px] text-muted-foreground md:text-lg">
-            Get started in minutes and see the difference our platform can make
-            for your business.
+            Our products are designed to work seamlessly together, providing a
+            comprehensive solution for your HR needs.
           </p>
         </motion.div>
 
@@ -36,21 +39,21 @@ export default function ProductsSection() {
           {[
             {
               step: "01",
-              title: "Create Account",
+              title: "Web Portal",
               description:
-                "Sign up in seconds with just your email. No credit card required to get started.",
+                "Manage all HR tasks online. Easy, fast, and secure. Perfect for HR admins.",
             },
             {
               step: "02",
-              title: "Configure Workspace",
+              title: "Employee App",
               description:
-                "Customize your workspace to match your team's unique workflow and requirements.",
+                "Mobile app for employees. Track attendance and requests. Stay connected anywhere.",
             },
             {
               step: "03",
-              title: "Boost Productivity",
+              title: "Lens App",
               description:
-                "Start using our powerful features to streamline processes and achieve your goals.",
+                "AI-powered face recognition for attendance. Syncs instantly with EZO HR for secure, real-time tracking.",
             },
           ].map((step, i) => (
             <motion.div
