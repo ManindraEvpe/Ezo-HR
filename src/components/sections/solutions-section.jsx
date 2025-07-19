@@ -96,7 +96,7 @@ export default function SolutionsSection() {
           >
             Solutions
           </Badge>
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight font-secondary">
             Everything You Need to Succeed
           </h2>
           <p className="max-w-[800px] text-muted-foreground md:text-lg">

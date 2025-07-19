@@ -24,7 +24,7 @@ export default function ProductsSection() {
           >
             Products
           </Badge>
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight font-secondary">
             Discover Our Suite of Powerful Products
           </h2>
           <p className="max-w-[800px] text-muted-foreground md:text-lg">

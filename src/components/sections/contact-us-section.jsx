@@ -35,7 +35,7 @@ export default function ContactUsSection() {
             </motion.div>
 
             <motion.div variants={fadeUp} className="space-y-2">
-              <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl">
+              <h2 className="text-3xl font-bold sm:text-4xl font-secondary">
                 See our platform in action
               </h2>
               <p className="text-muted-foreground md:text-xl">

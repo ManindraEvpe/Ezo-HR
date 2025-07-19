@@ -34,7 +34,7 @@ export default function PrivacyPolicy() {
 
         {/* Interpretation and Definitions */}
         <section className="mb-10">
-          <h2 className="text-3xl font-bold mb-8">
+          <h2 className="text-3xl font-bold mb-8 font-secondary">
             Interpretation and Definitions
           </h2>
 
@@ -130,7 +130,7 @@ export default function PrivacyPolicy() {
 
         {/* Collecting and Using Personal Data */}
         <section className="mb-10">
-          <h2 className="text-3xl font-bold mb-8">
+          <h2 className="text-3xl font-bold mb-8 font-secondary">
             Collecting and Using Your Personal Data
           </h2>
 
@@ -311,7 +311,7 @@ export default function PrivacyPolicy() {
             {
               title: "Transfer of Your Personal Data",
               content: [
-                "Your information, including Personal Data, is processed at the Company's operating offices and in any other places where the parties involved in the processing are located. It means that this information may be transferred to — and maintained on — computers located outside of Your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from Your jurisdiction.",
+                "Your information, including Personal Data, is processed at the Company's operating offices and in any other places where the parties involved in the processing are located. It means that this information may be transferred to and maintained on computers located outside of Your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from Your jurisdiction.",
                 "Your consent to this Privacy Policy followed by Your submission of such information represents Your agreement to that transfer.",
                 "The Company will take all steps reasonably necessary to ensure that Your data is treated securely and in accordance with this Privacy Policy and no transfer of Your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of Your data and other personal information.",
               ],
@@ -371,7 +371,7 @@ export default function PrivacyPolicy() {
 
           {/* Disclosure Section */}
           <div>
-            <h3 className="text-2xl font-semibold mb-6">
+            <h3 className="text-2xl font-semibold mb-6 font-secondary">
               Disclosure of Your Personal Data
             </h3>
 
@@ -426,7 +426,9 @@ export default function PrivacyPolicy() {
 
           {/* Contact Section */}
           <div className="bg-background p-6 rounded-lg">
-            <h3 className="text-2xl font-semibold mb-2">Contact Us</h3>
+            <h3 className="text-2xl font-semibold mb-2 font-secondary">
+              Contact Us
+            </h3>
             <p className="text-muted-foreground mb-4 leading-relaxed">
               If you have any questions about this Privacy Policy, You can
               contact us:
