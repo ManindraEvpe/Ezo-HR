@@ -14,6 +14,7 @@ export default function ContactUsSection() {
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
       className="py-16 md:py-24"
+      id="contact-us"
     >
       <div className="container mx-auto px-4 md:px-6 2xl:max-w-[1400px]">
         <div className="grid gap-8 lg:grid-cols-2 items-center">
