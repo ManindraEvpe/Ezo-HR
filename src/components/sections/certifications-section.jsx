@@ -52,7 +52,7 @@ export default function CertificationsSection() {
         <div className="border border-t-0 border-r-0 rounded-bl-md lg:rounded-bl-none bg-background">
           <Dialog>
             <DialogTrigger>
-              <img src="/iso-img.png" className="h-24" alt="" />
+              <img src="/iso-img.png" className="h-28" alt="" />
             </DialogTrigger>
             <DialogContent>
               <DialogHeader>
@@ -65,7 +65,7 @@ export default function CertificationsSection() {
         <div className="border border-r-0 border-t-0 bg-background">
           <Dialog>
             <DialogTrigger>
-              <img src="/iso-2-img.png" className="h-24" alt="" />
+              <img src="/iso-2-img.png" className="h-28" alt="" />
             </DialogTrigger>
             <DialogContent>
               <DialogHeader>
@@ -78,7 +78,7 @@ export default function CertificationsSection() {
         <div className="border border-t-0 rounded-br-md bg-background">
           <Dialog>
             <DialogTrigger>
-              <img src="/nqcab-img.png" className="h-24" alt="" />
+              <img src="/nqcab-img.png" className="h-28" alt="" />
             </DialogTrigger>
             <DialogContent>
               <DialogHeader>
