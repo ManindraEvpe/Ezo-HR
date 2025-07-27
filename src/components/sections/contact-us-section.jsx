@@ -119,6 +119,35 @@ export default function ContactUsSection() {
             <ContactUsForm />
           </motion.div>
         </div>
+
+        <div className="flex flex-col gap-6 mt-6 h-full">
+          {/* Address Cards - Responsive Layout */}
+          <div className="flex flex-col md:flex-row gap-6 h-full items-stretch">
+            <Card className="flex flex-col h-36 flex-1 shadow-lg">
+              <CardHeader>
+                <CardTitle className="text-lg">
+                  Registers Office Address
+                </CardTitle>
+                <CardDescription>
+                  H.No- 2-1-349/31/1, Plot No-31 Green Field Colony, Road No-3
+                  Mamta Nagar, Hyderabad – 500068 Telangana, India
+                </CardDescription>
+              </CardHeader>
+            </Card>
+            <Card className="flex flex-col h-36 flex-1 shadow-lg">
+              <CardHeader>
+                <CardTitle className="text-lg">
+                  Operational Office Address
+                </CardTitle>
+                <CardDescription>
+                  H.No. 4-7-18/5/1 THE SURABHIMAHAS Raghavendra Nagar Colony
+                  Nacharam, Medchal-Malkajigiri Dist HYDERABAD, TELANGANA,
+                  Pin:500076.
+                </CardDescription>
+              </CardHeader>
+            </Card>
+          </div>
+        </div>
       </div>
     </motion.section>
   );

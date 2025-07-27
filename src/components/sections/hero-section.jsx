@@ -31,7 +31,7 @@ export default function HeroSection() {
             <SparklesText>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70 font-secondary">
                 Simplify Your HR Operations <br />
-                <AuroraText>with Ezo HR</AuroraText>
+                <AuroraText>WITH EZO HR</AuroraText>
               </h1>
             </SparklesText>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
