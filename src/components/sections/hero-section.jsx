@@ -1,17 +1,15 @@
-// eslint-disable-next-line no-unused-vars
-import { motion } from "framer-motion";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { ArrowRight, ArrowUpRight, Check } from "lucide-react";
+/* eslint-disable no-unused-vars */
 import { AuroraText } from "@/components/magicui/aurora-text";
 import { SparklesText } from "@/components/magicui/sparkles-text";
+import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
+import { ArrowRight, ArrowUpRight, Check } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function HeroSection() {
   return (
     <section id="hero-section">
       <div className="container px-4 md:px-6 relative">
-
         <div className="w-full py-20 md:py-24 lg:py-24 overflow-hidden">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -20,13 +18,13 @@ export default function HeroSection() {
             className="text-center max-w-5xl mx-auto mb-12"
           >
             <a href="https://ezohr.com/login">
-              <Badge
+              <Button
                 className="mb-4 rounded-full px-4 py-1.5 text-sm font-medium"
-                variant="secondary"
+                variant="shadowed"
               >
                 ✨ Try it now
                 <ArrowUpRight />
-              </Badge>
+              </Button>
             </a>
             <SparklesText>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70 font-secondary">
