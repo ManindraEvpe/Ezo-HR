@@ -33,6 +33,11 @@ const navItems = [
     id: "/contact-us",
     isHash: false,
   },
+  {
+    title: "Careers",
+    id: "/careers",
+    isHash: false,
+  },
 ];
 
 const Navbar1 = ({ scrollProgress }) => {
