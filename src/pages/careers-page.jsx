@@ -26,156 +26,105 @@ import {
   DollarSignIcon,
   StarIcon,
   BookmarkIcon,
-  TrendingUpIcon,
-  BarChartIcon,
   UsersIcon,
   CalendarIcon,
 } from "lucide-react";
 
 const jobPositions = [
   {
-    id: "senior-frontend-engineer",
-    title: "Senior Frontend Engineer",
-    department: "Engineering",
-    companyName: "TechVision",
-    companyLogo: "https://cdn.worldvectorlogo.com/logos/react-2.svg",
-    location: "San Francisco, CA",
-    locationType: "hybrid",
-    employmentType: "full-time",
-    experienceLevel: "senior",
-    postedDate: "2023-09-15",
-    salary: "$130,000 - $160,000",
-    description:
-      "Lead the development of our flagship product using React, TypeScript, and modern web technologies. Join a talented team working on cutting-edge solutions.",
-    featured: true,
-    highlight: "competitive",
-    perks: [
-      "Flexible hours",
-      "Remote options",
-      "Health insurance",
-      "401(k) match",
-      "Learning budget",
-    ],
-  },
-  {
-    id: "product-manager",
-    title: "Product Manager",
-    department: "Product",
-    companyName: "InnovateCorp",
-    companyLogo:
-      "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg",
+    id: "hr-technology-specialist",
+    title: "HR Technology Specialist",
+    department: "Human Resources",
+    companyName: "Ezo HR",
+    companyLogo: "/logo-png.png",
     location: "New York, NY",
     locationType: "hybrid",
     employmentType: "full-time",
     experienceLevel: "senior",
-    postedDate: "2023-09-18",
-    salary: "$120,000 - $150,000",
+    postedDate: "2025-01-25",
+    salary: "₹12,00,000 - ₹18,00,000",
     description:
-      "Define the product vision and strategy for our SaaS platform. Collaborate with cross-functional teams to deliver exceptional user experiences.",
+      "Drive digital transformation in our HR processes. Implement and optimize HRIS systems, automate workflows, and provide data-driven insights to enhance employee experience.",
     featured: true,
-    highlight: "new",
+    highlight: "urgent",
     perks: [
-      "Unlimited PTO",
-      "Health benefits",
-      "Remote work options",
-      "Stock options",
-      "Catered lunches",
+      "Flexible work arrangements",
+      "Professional certifications",
+      "Health & dental coverage",
+      "401(k) matching",
+      "Continuous learning budget",
     ],
   },
   {
-    id: "senior-data-scientist",
-    title: "Senior Data Scientist",
-    department: "Data Science",
-    companyName: "DataDriven",
-    companyLogo: "https://cdn.worldvectorlogo.com/logos/python-5.svg",
-    location: "Remote",
+    id: "senior-react-developer",
+    title: "Senior React Developer",
+    department: "Engineering",
+    companyName: "Ezo HR",
+    companyLogo: "/logo-png.png",
+    location: "San Francisco, CA",
     locationType: "remote",
     employmentType: "full-time",
     experienceLevel: "senior",
-    postedDate: "2023-09-16",
-    salary: "$140,000 - $170,000",
+    postedDate: "2025-01-26",
+    salary: "₹25,00,000 - ₹35,00,000",
     description:
-      "Apply machine learning and statistical techniques to solve complex business problems. Work with large datasets to extract insights and drive decision-making.",
+      "Build cutting-edge HR solutions using React, TypeScript, and modern web technologies. Create intuitive interfaces that simplify complex HR workflows for thousands of users.",
     featured: true,
-    highlight: "trending",
+    highlight: "remote",
     perks: [
-      "Remote-first culture",
-      "Flexible schedule",
-      "Quarterly team retreats",
-      "Health & wellness stipend",
-      "Home office budget",
+      "100% Remote work",
+      "Unlimited PTO",
+      "Top-tier health insurance",
+      "Stock options",
+      "Home office stipend",
     ],
   },
   {
-    id: "software-architect",
-    title: "Software Architect",
-    department: "Engineering",
-    companyName: "CloudNative",
-    companyLogo: "https://cdn.worldvectorlogo.com/logos/aws-2.svg",
-    location: "Seattle, WA",
+    id: "people-analytics-manager",
+    title: "People Analytics Manager",
+    department: "Data & Analytics",
+    companyName: "Ezo HR",
+    companyLogo: "/logo-png.png",
+    location: "Chicago, IL",
     locationType: "hybrid",
     employmentType: "full-time",
     experienceLevel: "lead",
-    postedDate: "2023-09-14",
-    salary: "$160,000 - $190,000",
+    postedDate: "2025-01-24",
+    salary: "₹20,00,000 - ₹28,00,000",
     description:
-      "Design and lead the development of scalable, cloud-native applications. Drive technical decisions and mentor junior engineers in best practices.",
+      "Lead our people analytics initiatives to drive strategic HR decisions. Transform workforce data into actionable insights that improve employee engagement and organizational performance.",
     featured: true,
-    highlight: "competitive",
+    highlight: "featured",
     perks: [
-      "Competitive salary",
-      "Stock options",
-      "401(k) with 6% match",
-      "Comprehensive healthcare",
-      "Professional development budget",
+      "Data visualization tools",
+      "Leadership development",
+      "Comprehensive benefits",
+      "Performance bonuses",
+      "Conference attendance",
     ],
   },
   {
-    id: "ux-design-lead",
-    title: "UX Design Lead",
-    department: "Design",
-    companyName: "CreativeMinds",
-    companyLogo: "https://cdn.worldvectorlogo.com/logos/adobe-2.svg",
-    location: "Los Angeles, CA",
+    id: "talent-acquisition-specialist",
+    title: "Talent Acquisition Specialist",
+    department: "Recruitment",
+    companyName: "Ezo HR",
+    companyLogo: "/logo-png.png",
+    location: "Austin, TX",
     locationType: "onsite",
     employmentType: "full-time",
-    experienceLevel: "lead",
-    postedDate: "2023-09-17",
-    salary: "$130,000 - $160,000",
-    description:
-      "Lead a team of designers to create intuitive, engaging user experiences. Collaborate with product and engineering teams to deliver cohesive products.",
-    featured: true,
-    highlight: "popular",
-    perks: [
-      "Creative studio environment",
-      "Latest design tools",
-      "Healthcare coverage",
-      "Gym membership",
-      "Casual dress code",
-    ],
-  },
-  {
-    id: "backend-engineer",
-    title: "Backend Engineer",
-    department: "Engineering",
-    companyName: "ServerStack",
-    companyLogo: "https://cdn.worldvectorlogo.com/logos/nodejs-1.svg",
-    location: "Boston, MA",
-    locationType: "hybrid",
-    employmentType: "full-time",
     experienceLevel: "mid",
-    postedDate: "2023-09-20",
-    salary: "$115,000 - $140,000",
+    postedDate: "2025-01-27",
+    salary: "₹8,00,000 - ₹12,00,000",
     description:
-      "Develop scalable backend services and APIs using modern technologies. Collaborate with frontend teams to integrate user interfaces.",
+      "Join our dynamic recruitment team to attract top talent. Develop innovative sourcing strategies, enhance candidate experience, and build strong talent pipelines for our growing organization.",
     featured: true,
-    highlight: "new",
+    highlight: "freshers",
     perks: [
-      "Flexible working hours",
-      "Remote options",
-      "Healthcare",
-      "Wellness program",
-      "Professional development",
+      "Recruitment tools access",
+      "Flexible scheduling",
+      "Health benefits",
+      "Team building events",
+      "Career growth opportunities",
     ],
   },
 ];
@@ -230,33 +179,33 @@ export default function CareersPage() {
   // Get appropriate highlight icon and color
   const getHighlightDetails = (highlight) => {
     switch (highlight) {
-      case "new":
+      case "urgent":
         return {
-          icon: <StarIcon className="h-4 w-4" />,
-          label: "New",
+          icon: <CalendarIcon className="h-4 w-4" />,
+          label: "Urgent Hiring",
+          color:
+            "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
+        };
+      case "remote":
+        return {
+          icon: <MapPinIcon className="h-4 w-4" />,
+          label: "Remote",
           color:
             "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300",
         };
-      case "trending":
+      case "featured":
         return {
-          icon: <TrendingUpIcon className="h-4 w-4" />,
-          label: "Trending",
+          icon: <StarIcon className="h-4 w-4" />,
+          label: "Featured",
           color:
             "bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-300",
         };
-      case "competitive":
-        return {
-          icon: <BarChartIcon className="h-4 w-4" />,
-          label: "Competitive",
-          color:
-            "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300",
-        };
-      case "popular":
+      case "freshers":
         return {
           icon: <UsersIcon className="h-4 w-4" />,
-          label: "Popular",
+          label: "Freshers Welcome",
           color:
-            "bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-300",
+            "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300",
         };
       default:
         return null;
@@ -400,8 +349,8 @@ export default function CareersPage() {
                     </CardContent>
                     <CardFooter className="flex gap-3 pt-2">
                       <Button variant="outline" size="sm" className="w-1/2">
-                        <BookmarkIcon className="mr-1 h-4 w-4" />
-                        Save
+                        <BriefcaseIcon className="mr-1 h-4 w-4" />
+                        View Details
                       </Button>
                       <Button size="sm" className="w-1/2">
                         Apply Now
