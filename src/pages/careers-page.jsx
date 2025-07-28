@@ -1,7 +1,9 @@
 import * as React from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import {
@@ -183,8 +185,7 @@ export default function CareersPage() {
         return {
           icon: <CalendarIcon className="h-4 w-4" />,
           label: "Urgent Hiring",
-          color:
-            "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
+          color: "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
         };
       case "remote":
         return {
@@ -211,6 +212,10 @@ export default function CareersPage() {
         return null;
     }
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <main className="container mx-auto px-12 py-12" id="careers">

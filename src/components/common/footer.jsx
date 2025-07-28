@@ -28,7 +28,7 @@ export default function Footer() {
               <Button variant="link">Privacy Policy</Button>
             </Link>
             <div className="text-muted-foreground mt-2">
-              &copy; 2025 Ezo HR. All rights reserved.
+              &copy; 2025 EZO HR. All rights reserved.
             </div>
           </div>
         </div>

@@ -5,14 +5,19 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 export default function PricingSection() {
+  const navigate = useNavigate();
   return (
     <section
       id="pricing"
       className="w-full py-20 md:py-32 relative overflow-hidden"
     >
-      <div className="absolute inset-0 -z-10 w-screen h-full bg-white dark:bg-black bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#1f1f1f_1px,transparent_1px),linear-gradient(to_bottom,#1f1f1f_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,#000_40%,transparent_100%)]" style={{left: '50%', transform: 'translateX(-50%)'}}></div>
+      <div
+        className="absolute inset-0 -z-10 w-screen h-full bg-white dark:bg-black bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#1f1f1f_1px,transparent_1px),linear-gradient(to_bottom,#1f1f1f_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,#000_40%,transparent_100%)]"
+        style={{ left: "50%", transform: "translateX(-50%)" }}
+      ></div>
       <div className="container px-4 md:px-6 relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -63,7 +68,7 @@ export default function PricingSection() {
                   },
                   {
                     name: "Web Portal + Ezo Lens",
-                    price: "₹1699",
+                    price: "₹1499",
                     description:
                       "Web Portal plus Ezo Lens (AI Face Attendance) for one employee, billed annually.",
                     features: [
@@ -77,7 +82,7 @@ export default function PricingSection() {
                   },
                   {
                     name: "Web Portal + Ezo Lens + Ezo Employee App",
-                    price: "₹2499",
+                    price: "₹1999",
                     description:
                       "Complete suite: Web Portal, Ezo Lens, and Employee App for one employee, billed annually.",
                     features: [
@@ -136,6 +141,7 @@ export default function PricingSection() {
                               : "bg-muted hover:bg-muted/80"
                           }`}
                           variant={plan.popular ? "default" : "outline"}
+                          onClick={() => navigate("/contact-us")}
                         >
                           {plan.cta}
                         </Button>

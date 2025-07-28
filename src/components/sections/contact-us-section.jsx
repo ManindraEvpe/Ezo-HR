@@ -11,8 +11,13 @@ import { MailCheck, Headset } from "lucide-react";
 
 import ContactUsForm from "@/components/forms/contact-us-form";
 import { Badge } from "@/components/ui/badge";
+import { useEffect } from "react";
 
 export default function ContactUsSection() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <motion.section
       initial={{ opacity: 0, y: 30 }}
