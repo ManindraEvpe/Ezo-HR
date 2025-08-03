@@ -151,7 +151,7 @@ const Navbar1 = ({ scrollProgress }) => {
           whileHover={{ scale: 1.05 }}
         >
           <Link
-            to="https://ezohr.com/login"
+            to="https://web.ezohr.com/login"
             className="inline-flex items-center justify-center px-5 py-2 text-sm text-white rounded-full transition-colors bg-primary"
           >
             Get Started

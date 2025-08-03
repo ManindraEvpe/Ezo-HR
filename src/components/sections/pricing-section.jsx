@@ -1,14 +1,91 @@
-// eslint-disable-next-line no-unused-vars
-import { motion } from "framer-motion";
+/* eslint-disable no-unused-vars */
 import { Badge } from "@/components/ui/badge";
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-import { Card, CardContent } from "@/components/ui/card";
-import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useNavigate } from "react-router-dom";
+import { Card, CardContent } from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { motion } from "framer-motion";
+import { Check } from "lucide-react";
+import { useMemo } from "react";
+import { Link } from "react-router-dom";
+import { AppStoreIcon, PlaystoreIcon } from "../common/icons";
 
 export default function PricingSection() {
-  const navigate = useNavigate();
+  const plans = useMemo(
+    () => [
+      {
+        name: "Web Portal (Admin • HR • Employee)",
+        price: "₹999",
+        description:
+          "One portal. Three roles. Role-based access for Admin, HR, and Employees",
+        features: [
+          "Admin/HR: Attendance control center regularize & approve, shifts/weekly off/holidays",
+          "Admin/HR: Payroll automation PF/ESI/TDS, payslips, statutory reports & exports",
+          "Admin/HR: Masters branches, departments, grades, policies; audits & logs",
+          "Employee (ESS Web): View attendance, apply leave/OD/WFH, see shifts/holiday calendar, download payslips, update profile/KYC",
+        ],
+        buttons: [
+          {
+            label: "Explore Web Portal",
+            action: "https://web.ezohr.com/login",
+            icon: <></>,
+          },
+        ],
+      },
+      {
+        name: "Employee App (Mobile ESS)",
+        price: "₹1499",
+        description: "Self-service and real-time updates for every employee.",
+        features: [
+          "Attendance view: My punches, shift & holiday calendar, monthly summary",
+          "Requests: Leave / OD / WFH / attendance regularization",
+          "Payroll: Download payslips, view CTC & YTD breakdown",
+          "Comms: Announcements and approval notifications",
+          "Optional: Mobile punch-in/out if enabled; otherwise attendance via EZO Lens",
+          "Secure: OTP/email login, role-based access, device binding, instant sync with Web Portal",
+        ],
+        buttons: [
+          {
+            label: "Download for Android",
+            action:
+              "https://play.google.com/store/apps/details?id=com.efs.ezohr&pcampaignid=web_share",
+            icon: <PlaystoreIcon />,
+          },
+          {
+            label: "Download for iOS (coming soon)",
+            action: "",
+            icon: <AppStoreIcon />,
+          },
+        ],
+        popular: true,
+      },
+      {
+        name: "Lens App (Face Liveness Attendance)",
+        price: "₹1999",
+        description:
+          "AI-powered, spoof-resistant check-ins for branches, sites, and field teams.",
+        features: [
+          "Authenticity: Face liveness + match at check-in; selfie evidence; optional PIN as 2FA",
+          "Modes:Kiosk (shared device), Supervisor verify, or Personal device (policy-controlled)",
+          "Controls: Geofence, Wi-Fi/QR/device binding, single-device lock, shift auto-detection, break capture",
+          "Tamper safety: Offline queue with encrypted storage → auto-sync; root/jailbreak checks; spoof flags",
+          "Audit trail: Geo/time stamp, device ID, photo trail; real-time push to Web Portal & Employee App",
+          "Integrations: Webhooks/APIs for payroll/ERP; instant regularization workflow",
+          "Privacy: Consent screen + purpose notice; configurable retention (DPDP-ready)",
+        ],
+        buttons: [
+          {
+            label: "See How Lens Works",
+            action:
+              "https://play.google.com/store/apps/details?id=com.efs.ezolens&pcampaignid=web_share",
+            icon: <></>,
+          },
+          { label: "Book a Live Demo", action: "/contact-us", icon: <></> },
+        ],
+      },
+    ],
+    []
+  );
+
   return (
     <section
       id="pricing"
@@ -52,48 +129,7 @@ export default function PricingSection() {
             </div>
             <TabsContent value="annually">
               <div className="grid gap-6 lg:grid-cols-3 lg:gap-8">
-                {[
-                  {
-                    name: "Web Portal",
-                    price: "₹999",
-                    description:
-                      "All core HR features for one employee, billed annually.",
-                    features: [
-                      "Attendance, payroll, and compliance",
-                      "Admin dashboard access",
-                      "Email support",
-                      "Per employee, per year",
-                    ],
-                    cta: "Start Free Trial",
-                  },
-                  {
-                    name: "Web Portal + Ezo Lens",
-                    price: "₹1499",
-                    description:
-                      "Web Portal plus Ezo Lens (AI Face Attendance) for one employee, billed annually.",
-                    features: [
-                      "All Web Portal features",
-                      "Ezo Lens AI Face Attendance",
-                      "Priority email support",
-                      "Per employee, per year",
-                    ],
-                    cta: "Start Free Trial",
-                    popular: true,
-                  },
-                  {
-                    name: "Web Portal + Ezo Lens + Ezo Employee App",
-                    price: "₹1999",
-                    description:
-                      "Complete suite: Web Portal, Ezo Lens, and Employee App for one employee, billed annually.",
-                    features: [
-                      "All Web Portal + Ezo Lens features",
-                      "Ezo Employee App access",
-                      "24/7 support",
-                      "Per employee, per year",
-                    ],
-                    cta: "Contact Sales",
-                  },
-                ].map((plan, i) => (
+                {plans.map((plan, i) => (
                   <motion.div
                     key={i}
                     initial={{ opacity: 0, y: 20 }}
@@ -126,25 +162,37 @@ export default function PricingSection() {
                         <p className="text-muted-foreground mt-2">
                           {plan.description}
                         </p>
-                        <ul className="space-y-3 my-6 flex-grow">
+                        <ul className="space-y-3 text-xs my-6 flex-grow">
                           {plan.features.map((feature, j) => (
-                            <li key={j} className="flex items-center">
-                              <Check className="mr-2 size-4 text-primary" />
+                            <li key={j} className="flex items-start">
+                              <Check className="mr-2 size-4 text-primary flex-shrink-0 mt-0.5" />
                               <span>{feature}</span>
                             </li>
                           ))}
                         </ul>
-                        <Button
-                          className={`w-full mt-auto rounded-full ${
-                            plan.popular
-                              ? "bg-primary hover:bg-primary/90"
-                              : "bg-muted hover:bg-muted/80"
-                          }`}
-                          variant={plan.popular ? "default" : "outline"}
-                          onClick={() => navigate("/contact-us")}
-                        >
-                          {plan.cta}
-                        </Button>
+                        <div className="flex flex-col gap-2">
+                          {plan.buttons &&
+                            plan.buttons.map((button, btnIndex) => (
+                              <Link
+                                key={btnIndex}
+                                to={button.action}
+                                className="cursor-pointer"
+                              >
+                                <Button
+                                  disabled={!button.action}
+                                  className={`w-full mt-auto rounded-full ${
+                                    plan.popular
+                                      ? "bg-primary hover:bg-primary/90"
+                                      : "bg-muted hover:bg-muted/80"
+                                  }`}
+                                  variant={plan.popular ? "default" : "outline"}
+                                >
+                                  {button.icon}
+                                  {button.label}
+                                </Button>
+                              </Link>
+                            ))}
+                        </div>
                       </CardContent>
                     </Card>
                   </motion.div>

@@ -17,7 +17,7 @@ export default function HeroSection() {
             transition={{ duration: 0.5 }}
             className="text-center max-w-5xl mx-auto mb-12"
           >
-            <a href="https://ezohr.com/login">
+            <a href="https://web.ezohr.com/login">
               <Button
                 className="mb-4 rounded-full px-4 py-1.5 text-sm font-medium"
                 variant="shadowed"
@@ -38,7 +38,7 @@ export default function HeroSection() {
               ease, so you can focus on growth.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="https://ezohr.com/login">
+              <Link to="https://web.ezohr.com/login">
                 <Button size="lg" className="rounded-full h-12 px-8 text-base">
                   Start Free Trial
                   <ArrowRight className="ml-2 size-4" />
@@ -78,7 +78,7 @@ export default function HeroSection() {
           >
             <div className="rounded-xl overflow-hidden shadow-2xl border border-border/40 bg-gradient-to-b from-background to-muted/20">
               <img
-                src="/site-demo.png"
+                src="/site-demo-screenshot.png"
                 width={1280}
                 height={720}
                 alt="SaaSify dashboard"
