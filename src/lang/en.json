@@ -1,0 +1,497 @@
+{
+  "navigation": {
+    "navItems": {
+      "solutions": "Solutions",
+      "certifications": "Certifications",
+      "products": "Products",
+      "pricing": "Pricing",
+      "contactUs": "Contact Us",
+      "careers": "Careers"
+    },
+    "buttons": {
+      "getStarted": "Get Started"
+    }
+  },
+  "common": {
+    "footer": {
+      "description": "Ezo HR is your all-in-one solution for managing HR tasks efficiently. From attendance tracking to payroll processing, we streamline your HR operations.",
+      "privacyPolicy": "Privacy Policy",
+      "copyright": "© 2025 Ezo HR. All rights reserved."
+    }
+  },
+  "pages": {
+    "home": {
+      "title": "Landing Page"
+    },
+    "careers": {
+      "badge": "Careers",
+      "title": "Work at the heart of change",
+      "description": "We believe in creating a culture of innovation, which is reflected in everything we do. Empower yourself with possibilities that will take you to new heights and exciting places.",
+      "jobPositions": {
+        "hrTechnologySpecialist": {
+          "title": "HR Technology Specialist",
+          "department": "Human Resources",
+          "location": "New York, NY",
+          "locationType": "hybrid",
+          "employmentType": "full-time",
+          "experienceLevel": "senior",
+          "salary": "₹12,00,000 - ₹18,00,000",
+          "description": "Drive digital transformation in our HR processes. Implement and optimize HRIS systems, automate workflows, and provide data-driven insights to enhance employee experience.",
+          "perks": [
+            "Flexible work arrangements",
+            "Professional certifications",
+            "Health & dental coverage",
+            "401(k) matching",
+            "Continuous learning budget"
+          ]
+        },
+        "seniorReactDeveloper": {
+          "title": "Senior React Developer",
+          "department": "Engineering",
+          "location": "San Francisco, CA",
+          "locationType": "remote",
+          "employmentType": "full-time",
+          "experienceLevel": "senior",
+          "salary": "₹25,00,000 - ₹35,00,000",
+          "description": "Build cutting-edge HR solutions using React, TypeScript, and modern web technologies. Create intuitive interfaces that simplify complex HR workflows for thousands of users.",
+          "perks": [
+            "100% Remote work",
+            "Unlimited PTO",
+            "Top-tier health insurance",
+            "Stock options",
+            "Home office stipend"
+          ]
+        },
+        "peopleAnalyticsManager": {
+          "title": "People Analytics Manager",
+          "department": "Data & Analytics",
+          "location": "Chicago, IL",
+          "locationType": "hybrid",
+          "employmentType": "full-time",
+          "experienceLevel": "lead",
+          "salary": "₹20,00,000 - ₹28,00,000",
+          "description": "Lead our people analytics initiatives to drive strategic HR decisions. Transform workforce data into actionable insights that improve employee engagement and organizational performance.",
+          "perks": [
+            "Data visualization tools",
+            "Leadership development",
+            "Comprehensive benefits",
+            "Performance bonuses",
+            "Conference attendance"
+          ]
+        },
+        "talentAcquisitionSpecialist": {
+          "title": "Talent Acquisition Specialist",
+          "department": "Recruitment",
+          "location": "Austin, TX",
+          "locationType": "onsite",
+          "employmentType": "full-time",
+          "experienceLevel": "mid",
+          "salary": "₹8,00,000 - ₹12,00,000",
+          "description": "Join our dynamic recruitment team to attract top talent. Develop innovative sourcing strategies, enhance candidate experience, and build strong talent pipelines for our growing organization.",
+          "perks": [
+            "Recruitment tools access",
+            "Flexible scheduling",
+            "Health benefits",
+            "Team building events",
+            "Career growth opportunities"
+          ]
+        }
+      },
+      "labels": {
+        "today": "Today",
+        "yesterday": "Yesterday",
+        "daysAgo": "days ago",
+        "posted": "Posted",
+        "perksAndBenefits": "Perks & Benefits:",
+        "more": "more",
+        "viewDetails": "View Details",
+        "applyNow": "Apply Now"
+      },
+      "locationTypes": {
+        "remote": "Remote",
+        "hybrid": "Hybrid",
+        "onsite": "On-site"
+      },
+      "employmentTypes": {
+        "fullTime": "Full-time",
+        "partTime": "Part-time",
+        "contract": "Contract",
+        "internship": "Internship"
+      },
+      "highlights": {
+        "urgent": "Urgent Hiring",
+        "remote": "Remote",
+        "featured": "Featured",
+        "freshers": "Freshers Welcome"
+      }
+    },
+    "privacyPolicy": {
+      "lastUpdated": "Last updated: July 11, 2025",
+      "title": "Privacy Policy",
+      "introduction": {
+        "paragraph1": "This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.",
+        "paragraph2": "We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy."
+      },
+      "sections": {
+        "interpretationAndDefinitions": {
+          "title": "Interpretation and Definitions",
+          "interpretation": {
+            "title": "Interpretation",
+            "content": "The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural."
+          },
+          "definitions": {
+            "title": "Definitions",
+            "intro": "For the purposes of this Privacy Policy:",
+            "account": "means a unique account created for You to access our Service or parts of our Service.",
+            "affiliate": "means an entity that controls, is controlled by or is under common control with a party, where \"control\" means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.",
+            "application": "refers to EZO LENS, the software program provided by the Company.",
+            "company": "(referred to as either \"the Company\", \"We\", \"Us\" or \"Our\" in this Agreement) refers to Ezwiiz Frontier Systems Private Limited, H NO 2-1-349/31/1 GREEN, FIELD COLONY, NAGOLE, Gsi(Sr) Bandlaguda, Hayathnagar, Hyderabad- 500068, Telangana.",
+            "country": "refers to: Telangana, India",
+            "device": "means any device that can access the Service such as a computer, a cellphone or a digital tablet.",
+            "personalData": "is any information that relates to an identified or identifiable individual.",
+            "service": "refers to the Application.",
+            "serviceProvider": "means any natural or legal person who processes the data on behalf of the Company.",
+            "usageData": "refers to data collected automatically, either generated by the use of the Service or from the Service infrastructure itself.",
+            "you": "means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable."
+          }
+        },
+        "collectingAndUsing": {
+          "title": "Collecting and Using Your Personal Data",
+          "typesOfData": {
+            "title": "Types of Data Collected",
+            "personalData": {
+              "title": "Personal Data",
+              "intro": "While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You. Personally identifiable information may include, but is not limited to:",
+              "items": [
+                "Email address",
+                "First name and last name",
+                "Phone number",
+                "Address, State, Province, ZIP/Postal code, City"
+              ]
+            },
+            "usageData": {
+              "title": "Usage Data",
+              "paragraph1": "Usage Data is collected automatically when using the Service.",
+              "paragraph2": "Usage Data may include information such as Your Device's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that You visit, the time and date of Your visit, the time spent on those pages, unique device identifiers and other diagnostic data.",
+              "paragraph3": "When You access the Service by or through a mobile device, We may collect certain information automatically, including, but not limited to, the type of mobile device You use, Your mobile device unique ID, the IP address of Your mobile device, Your mobile operating system, the type of mobile Internet browser You use, unique device identifiers and other diagnostic data."
+            },
+            "applicationInfo": {
+              "title": "Information Collected while Using the Application",
+              "intro": "While using Our Application, in order to provide features of Our Application, We may collect, with Your prior permission:",
+              "items": [
+                "Information regarding your location",
+                "Pictures and other information from your Device's camera and photo library"
+              ],
+              "paragraph1": "We use this information to provide features of Our Service, to improve and customize Our Service. The information may be uploaded to the Company's servers and/or a Service Provider's server or it may be simply stored on Your device.",
+              "paragraph2": "You can enable or disable access to this information at any time, through Your Device settings."
+            }
+          },
+          "useOfPersonalData": {
+            "title": "Use of Your Personal Data",
+            "intro": "The Company may use Personal Data for the following purposes:",
+            "purposes": [
+              "To provide and maintain our Service, including to monitor the usage of our Service.",
+              "To manage Your Account: to manage Your registration as a user of the Service.",
+              "For the performance of a contract: the development, compliance and undertaking of the purchase contract for the products, items or services You have purchased.",
+              "To contact You: To contact You by email, telephone calls, SMS, or other equivalent forms of electronic communication.",
+              "To provide You with news, special offers and general information about other goods, services and events.",
+              "To manage Your requests: To attend and manage Your requests to Us.",
+              "For business transfers: We may use Your information to evaluate or conduct a merger, divestiture, restructuring, reorganization, dissolution, or other sale or transfer of some or all of Our assets.",
+              "For other purposes: We may use Your information for other purposes, such as data analysis, identifying usage trends, determining the effectiveness of our promotional campaigns and to evaluate and improve our Service."
+            ]
+          },
+          "sharingPersonalInfo": {
+            "intro": "We may share Your personal information in the following situations:",
+            "situations": [
+              {
+                "title": "With Service Providers:",
+                "content": "We may share Your personal information with Service Providers to monitor and analyze the use of our Service, to contact You."
+              },
+              {
+                "title": "For business transfers:",
+                "content": "We may share or transfer Your personal information in connection with, or during negotiations of, any merger, sale of Company assets, financing, or acquisition of all or a portion of Our business to another company."
+              },
+              {
+                "title": "With Affiliates:",
+                "content": "We may share Your information with Our affiliates, in which case we will require those affiliates to honor this Privacy Policy."
+              },
+              {
+                "title": "With business partners:",
+                "content": "We may share Your information with Our business partners to offer You certain products, services or promotions."
+              },
+              {
+                "title": "With other users:",
+                "content": "when You share personal information or otherwise interact in the public areas with other users, such information may be viewed by all users and may be publicly distributed outside."
+              },
+              {
+                "title": "With Your consent:",
+                "content": "We may disclose Your personal information for any other purpose with Your consent."
+              }
+            ]
+          }
+        },
+        "retention": {
+          "title": "Retention of Your Personal Data",
+          "paragraphs": [
+            "The Company will retain Your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use Your Personal Data to the extent necessary to comply with our legal obligations, resolve disputes, and enforce our legal agreements and policies.",
+            "The Company will also retain Usage Data for internal analysis purposes. Usage Data is generally retained for a shorter period of time, except when this data is used to strengthen the security or to improve the functionality of Our Service, or We are legally obligated to retain this data for longer time periods."
+          ]
+        },
+        "transfer": {
+          "title": "Transfer of Your Personal Data",
+          "paragraphs": [
+            "Your information, including Personal Data, is processed at the Company's operating offices and in any other places where the parties involved in the processing are located. It means that this information may be transferred to and maintained on computers located outside of Your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from Your jurisdiction.",
+            "Your consent to this Privacy Policy followed by Your submission of such information represents Your agreement to that transfer.",
+            "The Company will take all steps reasonably necessary to ensure that Your data is treated securely and in accordance with this Privacy Policy and no transfer of Your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of Your data and other personal information."
+          ]
+        },
+        "delete": {
+          "title": "Delete Your Personal Data",
+          "paragraphs": [
+            "You have the right to delete or request that We assist in deleting the Personal Data that We have collected about You.",
+            "Our Service may give You the ability to delete certain information about You from within the Service.",
+            "You may update, amend, or delete Your information at any time by signing in to Your Account, if you have one, and visiting the account settings section that allows you to manage Your personal information. You may also contact Us to request access to, correct, or delete any personal information that You have provided to Us.",
+            "Please note, however, that We may need to retain certain information when we have a legal obligation or lawful basis to do so."
+          ]
+        },
+        "security": {
+          "title": "Security of Your Personal Data",
+          "paragraphs": [
+            "The security of Your Personal Data is important to Us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While We strive to use commercially acceptable means to protect Your Personal Data, We cannot guarantee its absolute security."
+          ]
+        },
+        "childrensPrivacy": {
+          "title": "Children's Privacy",
+          "paragraphs": [
+            "Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under the age of 13. If You are a parent or guardian and You are aware that Your child has provided Us with Personal Data, please contact Us. If We become aware that We have collected Personal Data from anyone under the age of 13 without verification of parental consent, We take steps to remove that information from Our servers.",
+            "If We need to rely on consent as a legal basis for processing Your information and Your country requires consent from a parent, We may require Your parent's consent before We collect and use that information."
+          ]
+        },
+        "linksToOtherWebsites": {
+          "title": "Links to Other Websites",
+          "paragraphs": [
+            "Our Service may contain links to other websites that are not operated by Us. If You click on a third party link, You will be directed to that third party's site. We strongly advise You to review the Privacy Policy of every site You visit.",
+            "We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services."
+          ]
+        },
+        "changesToPrivacyPolicy": {
+          "title": "Changes to this Privacy Policy",
+          "paragraphs": [
+            "We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page.",
+            "We will let You know via email and/or a prominent notice on Our Service, prior to the change becoming effective and update the \"Last updated\" date at the top of this Privacy Policy.",
+            "You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page."
+          ]
+        },
+        "disclosure": {
+          "title": "Disclosure of Your Personal Data",
+          "businessTransactions": {
+            "title": "Business Transactions",
+            "content": "If the Company is involved in a merger, acquisition or asset sale, Your Personal Data may be transferred. We will provide notice before Your Personal Data is transferred and becomes subject to a different Privacy Policy."
+          },
+          "lawEnforcement": {
+            "title": "Law Enforcement",
+            "content": "Under certain circumstances, the Company may be required to disclose Your Personal Data if required to do so by law or in response to valid requests by public authorities (e.g. a court or a government agency)."
+          },
+          "otherLegalRequirements": {
+            "title": "Other Legal Requirements",
+            "intro": "The Company may disclose Your Personal Data in the good faith belief that such action is necessary to:",
+            "requirements": [
+              "Comply with a legal obligation",
+              "Protect and defend the rights or property of the Company",
+              "Prevent or investigate possible wrongdoing in connection with the Service",
+              "Protect the personal safety of Users of the Service or the public",
+              "Protect against legal liability"
+            ]
+          }
+        },
+        "contactUs": {
+          "title": "Contact Us",
+          "intro": "If you have any questions about this Privacy Policy, You can contact us:",
+          "email": "info@ezohr.com",
+          "website": "www.ezohr.com",
+          "phone": "+91-9652009244"
+        }
+      }
+    },
+    "contactUs": {
+      "badge": "Contact Us",
+      "title": "Get in Touch with Our Team",
+      "description": "Whether you need product guidance, sales assistance, or customer support we're ready to help. Connect with the right team and expect a response within 1–2 business days.",
+      "supportTeam": {
+        "title": "Support Team",
+        "description": "Need help with your account, services, or have technical questions? Our support team is here to assist.",
+        "supportEmail": "support@ezohr.com",
+        "contactEmail": "contact@ezohr.com",
+        "phone": "+91-9652009244"
+      },
+      "salesTeam": {
+        "title": "Sales Team",
+        "description": "Interested in learning more about our solutions or requesting a demo? Get in touch with our sales experts.",
+        "email": "sales@ezohr.com",
+        "phone": "+91-9030505922"
+      },
+      "addresses": {
+        "registeredOffice": {
+          "title": "Registers Office Address",
+          "address": "H.No- 2-1-349/31/1, Plot No-31 Green Field Colony, Road No-3 Mamta Nagar, Hyderabad – 500068 Telangana, India"
+        },
+        "operationalOffice": {
+          "title": "Operational Office Address",
+          "address": "H.No. 4-7-18/5/1 THE SURABHIMAHAS Raghavendra Nagar Colony Nacharam, Medchal-Malkajigiri Dist HYDERABAD, TELANGANA, Pin:500076."
+        }
+      },
+      "form": {
+        "title": "Fill in the form",
+        "fields": {
+          "firstName": "First Name",
+          "firstNamePlaceholder": "Enter your first name",
+          "lastName": "Last Name",
+          "lastNamePlaceholder": "Enter your last name",
+          "email": "Email",
+          "emailPlaceholder": "Enter your email",
+          "phone": "Phone Number",
+          "phonePlaceholder": "Enter your phone",
+          "details": "Details",
+          "detailsPlaceholder": "Tell us about your project"
+        },
+        "submitButton": "Send inquiry",
+        "messages": {
+          "success": "Message sent successfully! We will get back to you soon.",
+          "error": "Failed to send message. Please try again later."
+        }
+      }
+    }
+  },
+  "sections": {
+    "hero": {
+      "tryNow": "✨ Try it now",
+      "mainHeading": "Simplify Your HR Operations",
+      "subHeading": "WITH EZO HR",
+      "description": "Running a business is hard - managing your people shouldn't be. EZO HR helps to manage attendance, payroll, and compliance with ease, so you can focus on growth.",
+      "buttons": {
+        "startFreeTrial": "Start Free Trial",
+        "bookDemo": "Book a Demo"
+      },
+      "features": {
+        "noCreditCard": "No credit card",
+        "freeTrial": "7-Day free trial"
+      },
+      "imageAlt": "SaaSify dashboard"
+    },
+    "solutions": {
+      "badge": "Solutions",
+      "title": "Everything You Need to Succeed",
+      "description": "Our comprehensive platform provides all the tools you need to streamline your workflow, boost productivity, and achieve your goals.",
+      "features": [
+        {
+          "title": "Branch Management",
+          "description": "Easily manage multiple branches with centralized control and visibility."
+        },
+        {
+          "title": "Employee Management",
+          "description": "Streamline employee onboarding, attendance, and performance tracking."
+        },
+        {
+          "title": "Organization Policies",
+          "description": "Create and enforce organization policies to maintain compliance and consistency."
+        },
+        {
+          "title": "Role Management",
+          "description": "Define and manage roles and permissions for secure access control."
+        },
+        {
+          "title": "Attendance Management",
+          "description": "Track employee attendance effortlessly with real-time updates."
+        },
+        {
+          "title": "Leave & Holiday Management",
+          "description": "Simplify leave requests and holiday management with automated workflows."
+        },
+        {
+          "title": "Payroll Management",
+          "description": "Automate payroll calculations and ensure compliance with tax regulations."
+        },
+        {
+          "title": "Reports",
+          "description": "Generate insightful reports to analyze employee performance and business metrics."
+        }
+      ]
+    },
+    "products": {
+      "badge": "Products",
+      "title": "Discover Our Suite of Powerful Products",
+      "description": "Our products are designed to work seamlessly together, providing a comprehensive solution for your HR needs.",
+      "items": [
+        {
+          "title": "Web Portal",
+          "description": "Manage all HR tasks online. Easy, fast, and secure. Perfect for HR admins."
+        },
+        {
+          "title": "Employee App",
+          "description": "Mobile app for employees. Track attendance and requests. Stay connected anywhere."
+        },
+        {
+          "title": "Lens App",
+          "description": "AI-powered face recognition for attendance. Syncs instantly with EZO HR for secure, real-time tracking."
+        }
+      ]
+    },
+    "pricing": {
+      "badge": "Pricing",
+      "title": "Simple, Transparent Pricing",
+      "description": "Choose the plan that's right for your business. All plans include a 14-day free trial.",
+      "annually": "Annually (Save 20%)",
+      "plans": [
+        {
+          "name": "Web Portal",
+          "price": "₹999",
+          "description": "All core HR features for one employee, billed annually.",
+          "features": [
+            "Attendance, payroll, and compliance",
+            "Admin dashboard access",
+            "Email support",
+            "Per employee, per year"
+          ],
+          "cta": "Start Free Trial"
+        },
+        {
+          "name": "Web Portal + Ezo Lens",
+          "price": "₹1699",
+          "description": "Web Portal plus Ezo Lens (AI Face Attendance) for one employee, billed annually.",
+          "features": [
+            "All Web Portal features",
+            "Ezo Lens AI Face Attendance",
+            "Priority email support",
+            "Per employee, per year"
+          ],
+          "cta": "Start Free Trial",
+          "popular": true,
+          "mostPopular": "Most Popular"
+        },
+        {
+          "name": "Web Portal + Ezo Lens + Ezo Employee App",
+          "price": "₹2499",
+          "description": "Complete suite: Web Portal, Ezo Lens, and Employee App for one employee, billed annually.",
+          "features": [
+            "All Web Portal + Ezo Lens features",
+            "Ezo Employee App access",
+            "24/7 support",
+            "Per employee, per year"
+          ],
+          "cta": "Contact Sales"
+        }
+      ],
+      "perEmployee": "per employee"
+    },
+    "certifications": {
+      "title": "Our certifications say it all.",
+      "description": "We are proud to be certified by leading organizations, ensuring the highest quality and standards.",
+      "certificationTitles": {
+        "dunBradstreet": "Dun & Bradstreet",
+        "iso27701": "ISO 27701",
+        "nqcab": "NQCAB (National Quality Conformity Assessment Body)"
+      },
+      "scanQR": "Scan this QR code to view the certificate"
+    }
+  }
+}

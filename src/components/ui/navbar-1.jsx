@@ -6,35 +6,36 @@ import { Menu, X } from "lucide-react";
 import { motion } from "framer-motion";
 import ThemeSwitch from "../common/theme-switch";
 import { Link, useNavigate, useLocation } from "react-router-dom";
+import translations from "@/lang/en.json";
 
 const navItems = [
   {
-    title: "Solutions",
+    title: translations.navigation.navItems.solutions,
     id: "solutions",
     isHash: true,
   },
   {
-    title: "Certifications",
+    title: translations.navigation.navItems.certifications,
     id: "certifications",
     isHash: true,
   },
   {
-    title: "Products",
+    title: translations.navigation.navItems.products,
     id: "products",
     isHash: true,
   },
   {
-    title: "Pricing",
+    title: translations.navigation.navItems.pricing,
     id: "pricing",
     isHash: true,
   },
   {
-    title: "Contact Us",
+    title: translations.navigation.navItems.contactUs,
     id: "/contact-us",
     isHash: false,
   },
   {
-    title: "Careers",
+    title: translations.navigation.navItems.careers,
     id: "/careers",
     isHash: false,
   },
@@ -154,7 +155,7 @@ const Navbar1 = ({ scrollProgress }) => {
             to="https://ezohr.com/login"
             className="inline-flex items-center justify-center px-5 py-2 text-sm text-white rounded-full transition-colors bg-primary"
           >
-            Get Started
+{translations.navigation.buttons.getStarted}
           </Link>
           <ThemeSwitch />
         </motion.div>
@@ -237,7 +238,7 @@ const Navbar1 = ({ scrollProgress }) => {
                   className="inline-flex items-center justify-center w-full px-5 py-3 text-base text-white bg-black rounded-full hover:bg-gray-800 transition-colors "
                   onClick={toggleMenu}
                 >
-                  Get Started
+      {translations.navigation.buttons.getStarted}
                 </Link>
               </motion.div>
             </div>

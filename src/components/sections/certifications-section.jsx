@@ -6,6 +6,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import translations from "@/lang/en.json";
 
 export default function CertificationsSection() {
   return (
@@ -15,11 +16,10 @@ export default function CertificationsSection() {
     >
       <div className="p-20 border rounded-md rounded-b-none lg:rounded-bl-md lg:rounded-tr-none lg:border-r-0 bg-background">
         <h4 className="text-3xl md:text-4xl font-bold tracking-tight font-secondary">
-          Our certifications say it all.
+{translations.sections.certifications.title}
         </h4>
         <p className="text-muted-foreground md:text-lg">
-          We are proud to be certified by leading organizations, ensuring the
-          highest quality and standards.
+{translations.sections.certifications.description}
         </p>
       </div>
       <div
@@ -40,9 +40,9 @@ export default function CertificationsSection() {
             </DialogTrigger>
             <DialogContent>
               <DialogHeader>
-                <DialogTitle>Dun & Bradstreet</DialogTitle>
+<DialogTitle>{translations.sections.certifications.certificationTitles.dunBradstreet}</DialogTitle>
                 <DialogDescription>
-                  Scan this QR code to view the certificate
+{translations.sections.certifications.scanQR}
                 </DialogDescription>
               </DialogHeader>
               <img src="/dun-cert.png" alt="" />
@@ -56,7 +56,7 @@ export default function CertificationsSection() {
             </DialogTrigger>
             <DialogContent>
               <DialogHeader>
-                <DialogTitle>ISO 27701</DialogTitle>
+<DialogTitle>{translations.sections.certifications.certificationTitles.iso27701}</DialogTitle>
               </DialogHeader>
               <img src="/iso-cert.png" alt="" />
             </DialogContent>
@@ -69,7 +69,7 @@ export default function CertificationsSection() {
             </DialogTrigger>
             <DialogContent>
               <DialogHeader>
-                <DialogTitle>ISO 27701</DialogTitle>
+<DialogTitle>{translations.sections.certifications.certificationTitles.iso27701}</DialogTitle>
               </DialogHeader>
               <img src="/iso-cert.png" alt="" />
             </DialogContent>
@@ -82,8 +82,8 @@ export default function CertificationsSection() {
             </DialogTrigger>
             <DialogContent>
               <DialogHeader>
-                <DialogTitle>
-                  NQCAB (National Quality Conformity Assessment Body)
+<DialogTitle>
+                  {translations.sections.certifications.certificationTitles.nqcab}
                 </DialogTitle>
               </DialogHeader>
               <img src="/nqcab-cert.png" alt="" />

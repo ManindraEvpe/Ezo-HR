@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ArrowRight, ArrowUpRight, Check } from "lucide-react";
 import { Link } from "react-router-dom";
+import translations from "@/lang/en.json";
 
 export default function HeroSection() {
   return (
@@ -22,25 +23,23 @@ export default function HeroSection() {
                 className="mb-4 rounded-full px-4 py-1.5 text-sm font-medium"
                 variant="shadowed"
               >
-                ✨ Try it now
+{translations.sections.hero.tryNow}
                 <ArrowUpRight />
               </Button>
             </a>
             <SparklesText>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70 font-secondary">
-                Simplify Your HR Operations <br />
-                <AuroraText>WITH EZO HR</AuroraText>
+{translations.sections.hero.mainHeading} <br />
+                <AuroraText>{translations.sections.hero.subHeading}</AuroraText>
               </h1>
             </SparklesText>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Running a business is hard - managing your people shouldn't be.
-              EZO HR helps to manage attendance, payroll, and compliance with
-              ease, so you can focus on growth.
+{translations.sections.hero.description}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="https://ezohr.com/login">
                 <Button size="lg" className="rounded-full h-12 px-8 text-base">
-                  Start Free Trial
+{translations.sections.hero.buttons.startFreeTrial}
                   <ArrowRight className="ml-2 size-4" />
                 </Button>
               </Link>
@@ -50,18 +49,18 @@ export default function HeroSection() {
                   variant="outline"
                   className="rounded-full h-12 px-8 text-base"
                 >
-                  Book a Demo
+{translations.sections.hero.buttons.bookDemo}
                 </Button>
               </Link>
             </div>
             <div className="flex items-center justify-center gap-4 mt-6 text-sm text-muted-foreground">
               <div className="flex items-center gap-1">
                 <Check className="size-4 text-primary" />
-                <span>No credit card</span>
+<span>{translations.sections.hero.features.noCreditCard}</span>
               </div>
               <div className="flex items-center gap-1">
                 <Check className="size-4 text-primary" />
-                <span>7-Day free trial</span>
+<span>{translations.sections.hero.features.freeTrial}</span>
               </div>
               {/* <div className="flex items-center gap-1">
                 <Check className="size-4 text-primary" />
@@ -81,7 +80,7 @@ export default function HeroSection() {
                 src="/site-demo.png"
                 width={1280}
                 height={720}
-                alt="SaaSify dashboard"
+alt={translations.sections.hero.imageAlt}
                 className="w-full h-auto"
                 priority={"true"}
               />

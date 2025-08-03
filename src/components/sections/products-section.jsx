@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
+import translations from "@/lang/en.json";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -15,19 +16,19 @@ const fadeUp = {
 
 const products = [
   {
-    title: "Web Portal",
+    title: translations.sections.products.items[0].title,
     icon: <MonitorIcon className="size-6" aria-hidden />,
-    desc: "Manage all HR tasks online. Easy, fast, and secure. Perfect for HR admins.",
+    desc: translations.sections.products.items[0].description,
   },
   {
-    title: "Employee App",
+    title: translations.sections.products.items[1].title,
     icon: <MobileIcon className="size-6" aria-hidden />,
-    desc: "Mobile app for employees. Track attendance and requests. Stay connected anywhere.",
+    desc: translations.sections.products.items[1].description,
   },
   {
-    title: "Lens App",
+    title: translations.sections.products.items[2].title,
     icon: <LensIcon className="size-6" aria-hidden />,
-    desc: "AI-powered face recognition for attendance. Syncs instantly with EZO HR for secure, real-time tracking.",
+    desc: translations.sections.products.items[2].description,
   },
 ];
 
@@ -46,7 +47,7 @@ export default function ProductsSection() {
               className="rounded-full px-4 py-1.5 text-sm font-medium"
               variant="secondary"
             >
-              Products
+{translations.sections.products.badge}
             </Badge>
           </motion.div>
 
@@ -55,7 +56,7 @@ export default function ProductsSection() {
             variants={fadeUp}
             className="text-3xl md:text-4xl font-bold tracking-tight font-secondary"
           >
-            Discover Our Suite of Powerful Products
+{translations.sections.products.title}
           </motion.h2>
 
           <motion.p
@@ -63,8 +64,7 @@ export default function ProductsSection() {
             variants={fadeUp}
             className="max-w-2xl text-muted-foreground md:text-lg"
           >
-            Our products are designed to work seamlessly together, providing a
-            comprehensive solution for your HR needs.
+{translations.sections.products.description}
           </motion.p>
         </motion.div>
 

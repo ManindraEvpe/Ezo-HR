@@ -12,6 +12,7 @@ import {
   SquareCheck,
   Users,
 } from "lucide-react";
+import translations from "@/lang/en.json";
 
 export default function SolutionsSection() {
   const container = {
@@ -31,51 +32,43 @@ export default function SolutionsSection() {
 
   const features = [
     {
-      title: "Branch Management",
-      description:
-        "Easily manage multiple branches with centralized control and visibility.",
+      title: translations.sections.solutions.features[0].title,
+      description: translations.sections.solutions.features[0].description,
       icon: <GitBranchPlus className="size-5" />,
     },
     {
-      title: "Employee Management",
-      description:
-        "Streamline employee onboarding, attendance, and performance tracking.",
+      title: translations.sections.solutions.features[1].title,
+      description: translations.sections.solutions.features[1].description,
       icon: <IdCardLanyard className="size-5" />,
     },
     {
-      title: "Organization Policies",
-      description:
-        "Create and enforce organization policies to maintain compliance and consistency.",
+      title: translations.sections.solutions.features[2].title,
+      description: translations.sections.solutions.features[2].description,
       icon: <Building2 className="size-5" />,
     },
     {
-      title: "Role Management",
-      description:
-        "Define and manage roles and permissions for secure access control.",
+      title: translations.sections.solutions.features[3].title,
+      description: translations.sections.solutions.features[3].description,
       icon: <Users className="size-5" />,
     },
     {
-      title: "Attendance Management",
-      description:
-        "Track employee attendance effortlessly with real-time updates.",
+      title: translations.sections.solutions.features[4].title,
+      description: translations.sections.solutions.features[4].description,
       icon: <SquareCheck className="size-5" />,
     },
     {
-      title: "Leave & Holiday Management",
-      description:
-        "Simplify leave requests and holiday management with automated workflows.",
+      title: translations.sections.solutions.features[5].title,
+      description: translations.sections.solutions.features[5].description,
       icon: <Calendar className="size-5" />,
     },
     {
-      title: "Payroll Management",
-      description:
-        "Automate payroll calculations and ensure compliance with tax regulations.",
+      title: translations.sections.solutions.features[6].title,
+      description: translations.sections.solutions.features[6].description,
       icon: <ReceiptText className="size-5" />,
     },
     {
-      title: "Reports",
-      description:
-        "Generate insightful reports to analyze employee performance and business metrics.",
+      title: translations.sections.solutions.features[7].title,
+      description: translations.sections.solutions.features[7].description,
       icon: <FileText className="size-5" />,
     },
   ];
@@ -94,15 +87,13 @@ export default function SolutionsSection() {
             className="rounded-full px-4 py-1.5 text-sm font-medium"
             variant="secondary"
           >
-            Solutions
+{translations.sections.solutions.badge}
           </Badge>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight font-secondary">
-            Everything You Need to Succeed
+{translations.sections.solutions.title}
           </h2>
           <p className="max-w-[800px] text-muted-foreground md:text-lg">
-            Our comprehensive platform provides all the tools you need to
-            streamline your workflow, boost productivity, and achieve your
-            goals.
+{translations.sections.solutions.description}
           </p>
         </motion.div>
 

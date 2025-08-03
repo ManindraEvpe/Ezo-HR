@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
+import translations from "@/lang/en.json";
 import {
   Card,
   CardContent,
@@ -225,15 +226,13 @@ export default function CareersPage() {
             className="p-2 rounded-full bg-background text-sm px-4"
             variant="outline"
           >
-            Careers
+{translations.pages.careers.badge}
           </Badge>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight font-secondary mt-4">
-            Work at the heart of change
+{translations.pages.careers.title}
           </h2>
           <p className="max-w-4xl text-muted-foreground md:text-lg text-center mt-2">
-            We believe in creating a culture of innovation, which is reflected
-            in everything we do. Empower yourself with possibilities that will
-            take you to new heights and exciting places.
+{translations.pages.careers.description}
           </p>
         </div>
 

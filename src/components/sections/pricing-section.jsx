@@ -5,6 +5,7 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import translations from "@/lang/en.json";
 
 export default function PricingSection() {
   return (
@@ -25,14 +26,13 @@ export default function PricingSection() {
             className="rounded-full px-4 py-1.5 text-sm font-medium"
             variant="secondary"
           >
-            Pricing
+{translations.sections.pricing.badge}
           </Badge>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight font-secondary">
-            Simple, Transparent Pricing
+{translations.sections.pricing.title}
           </h2>
           <p className="max-w-[800px] text-muted-foreground md:text-lg">
-            Choose the plan that's right for your business. All plans include a
-            14-day free trial.
+{translations.sections.pricing.description}
           </p>
         </motion.div>
 
@@ -41,54 +41,13 @@ export default function PricingSection() {
             <div className="flex justify-center mb-8">
               <TabsList className="rounded-full p-1">
                 <TabsTrigger value="annually" className="rounded-full px-6">
-                  Annually (Save 20%)
+{translations.sections.pricing.annually}
                 </TabsTrigger>
               </TabsList>
             </div>
             <TabsContent value="annually">
               <div className="grid gap-6 lg:grid-cols-3 lg:gap-8">
-                {[
-                  {
-                    name: "Web Portal",
-                    price: "₹999",
-                    description:
-                      "All core HR features for one employee, billed annually.",
-                    features: [
-                      "Attendance, payroll, and compliance",
-                      "Admin dashboard access",
-                      "Email support",
-                      "Per employee, per year",
-                    ],
-                    cta: "Start Free Trial",
-                  },
-                  {
-                    name: "Web Portal + Ezo Lens",
-                    price: "₹1699",
-                    description:
-                      "Web Portal plus Ezo Lens (AI Face Attendance) for one employee, billed annually.",
-                    features: [
-                      "All Web Portal features",
-                      "Ezo Lens AI Face Attendance",
-                      "Priority email support",
-                      "Per employee, per year",
-                    ],
-                    cta: "Start Free Trial",
-                    popular: true,
-                  },
-                  {
-                    name: "Web Portal + Ezo Lens + Ezo Employee App",
-                    price: "₹2499",
-                    description:
-                      "Complete suite: Web Portal, Ezo Lens, and Employee App for one employee, billed annually.",
-                    features: [
-                      "All Web Portal + Ezo Lens features",
-                      "Ezo Employee App access",
-                      "24/7 support",
-                      "Per employee, per year",
-                    ],
-                    cta: "Contact Sales",
-                  },
-                ].map((plan, i) => (
+                {translations.sections.pricing.plans.map((plan, i) => (
                   <motion.div
                     key={i}
                     initial={{ opacity: 0, y: 20 }}
@@ -105,7 +64,7 @@ export default function PricingSection() {
                     >
                       {plan.popular && (
                         <div className="absolute top-0 right-0 bg-primary text-primary-foreground px-3 py-1 text-xs font-medium rounded-bl-lg">
-                          Most Popular
+  {translations.sections.pricing.plans[1].mostPopular}
                         </div>
                       )}
                       <CardContent className="p-6 flex flex-col h-full">
@@ -115,7 +74,7 @@ export default function PricingSection() {
                             {plan.price}
                           </span>
                           <span className="text-muted-foreground ml-1">
-                            per employee
+  {translations.sections.pricing.perEmployee}
                           </span>
                         </div>
                         <p className="text-muted-foreground mt-2">

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "../ui/button";
+import translations from "@/lang/en.json";
 
 export default function Footer() {
   return (
@@ -15,9 +16,7 @@ export default function Footer() {
             />
           </div>
           <p className="text-muted-foreground text-center md:text-left">
-            Ezo HR is your all-in-one solution for managing HR tasks
-            efficiently. From attendance tracking to payroll processing, we
-            streamline your HR operations.
+            {translations.common.footer.description}
           </p>
         </div>
 
@@ -25,10 +24,10 @@ export default function Footer() {
         <div className="text-center md:text-end">
           <div>
             <Link to="/privacy-policy">
-              <Button variant="link">Privacy Policy</Button>
+              <Button variant="link">{translations.common.footer.privacyPolicy}</Button>
             </Link>
             <div className="text-muted-foreground mt-2">
-              &copy; 2025 Ezo HR. All rights reserved.
+{translations.common.footer.copyright}
             </div>
           </div>
         </div>

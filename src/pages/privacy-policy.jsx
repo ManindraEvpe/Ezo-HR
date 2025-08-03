@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Separator } from "@/components/ui/separator";
 import { Badge } from "@/components/ui/badge";
+import translations from "@/lang/en.json";
 
 export default function PrivacyPolicy() {
   useEffect(() => {
@@ -15,25 +16,20 @@ export default function PrivacyPolicy() {
             variant="outline"
             className="p-2 px-4 rounded-full bg-background"
           >
-            Last updated: July 11, 2025
+{translations.pages.privacyPolicy.lastUpdated}
           </Badge>
           <h1 className="text-5xl font-bold tracking-tight mt-4 font-secondary">
-            Privacy Policy
+{translations.pages.privacyPolicy.title}
           </h1>
         </div>
 
         {/* Introduction */}
         <section className="mb-10">
           <p className="leading-relaxed text-muted-foreground mb-6">
-            This Privacy Policy describes Our policies and procedures on the
-            collection, use and disclosure of Your information when You use the
-            Service and tells You about Your privacy rights and how the law
-            protects You.
+{translations.pages.privacyPolicy.introduction.paragraph1}
           </p>
           <p className="text-lg leading-relaxed text-muted-foreground">
-            We use Your Personal data to provide and improve the Service. By
-            using the Service, You agree to the collection and use of
-            information in accordance with this Privacy Policy.
+{translations.pages.privacyPolicy.introduction.paragraph2}
           </p>
         </section>
 

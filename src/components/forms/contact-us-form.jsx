@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import translations from "@/lang/en.json";
 
 export default function ContactUsForm() {
   const formRef = useRef(null);
@@ -47,13 +48,13 @@ export default function ContactUsForm() {
         "NmsMQZqMGGvCyJbBN" // Your EmailJS public key
       );
       setFormMessage(
-        "Message sent successfully! We will get back to you soon."
+translations.pages.contactUs.form.messages.success
       );
       setMessageType("success");
       form.reset();
     } catch (error) {
       console.error("Error:", error);
-      setFormMessage("Failed to send message. Please try again later.");
+setFormMessage(translations.pages.contactUs.form.messages.error);
       setMessageType("error");
     }
   };
@@ -61,72 +62,72 @@ export default function ContactUsForm() {
   return (
     <Card className="border-0 max-w-xl w-full mx-auto">
       <CardContent className="p-4 sm:p-6">
-        <h2 className="mb-8 text-xl font-semibold">Fill in the form</h2>
+<h2 className="mb-8 text-xl font-semibold">{translations.pages.contactUs.form.title}</h2>
         <form id="contactForm" ref={formRef} onSubmit={handleSubmit}>
           <div className="grid gap-4 lg:gap-6">
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:gap-6">
               <div>
                 <Label htmlFor="firstname" className="mb-2">
-                  First Name
+{translations.pages.contactUs.form.fields.firstName}
                 </Label>
                 <Input
                   type="text"
                   id="firstname"
                   name="firstname"
-                  placeholder="Enter your first name"
+placeholder={translations.pages.contactUs.form.fields.firstNamePlaceholder}
                 />
               </div>
               <div>
                 <Label htmlFor="lastname" className="mb-2">
-                  Last Name
+{translations.pages.contactUs.form.fields.lastName}
                 </Label>
                 <Input
                   type="text"
                   id="lastname"
                   name="lastname"
-                  placeholder="Enter your last name"
+placeholder={translations.pages.contactUs.form.fields.lastNamePlaceholder}
                 />
               </div>
             </div>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:gap-6">
               <div>
                 <Label htmlFor="email" className="mb-2">
-                  Email
+{translations.pages.contactUs.form.fields.email}
                 </Label>
                 <Input
                   type="email"
                   id="email"
                   name="email"
-                  placeholder="Enter your email"
+placeholder={translations.pages.contactUs.form.fields.emailPlaceholder}
                 />
               </div>
               <div>
                 <Label htmlFor="phone" className="mb-2">
-                  Phone Number
+{translations.pages.contactUs.form.fields.phone}
                 </Label>
                 <Input
                   type="tel"
                   id="phone"
                   name="phone"
-                  placeholder="Enter your phone"
+placeholder={translations.pages.contactUs.form.fields.phonePlaceholder}
                 />
               </div>
             </div>
             <div>
               <Label htmlFor="message" className="mb-2">
-                Details
+{translations.pages.contactUs.form.fields.details}
               </Label>
               <Textarea
                 id="message"
                 name="message"
-                placeholder="Tell us about your project"
+placeholder={translations.pages.contactUs.form.fields.detailsPlaceholder}
                 className="h-[8rem]"
               />
             </div>
           </div>
           <div className="mt-6 grid">
             <Button type="submit" size="lg">
-              Send inquiry
+{translations.pages.contactUs.form.submitButton}
             </Button>
           </div>
           {formMessage && (

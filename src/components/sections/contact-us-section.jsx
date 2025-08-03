@@ -11,6 +11,7 @@ import { MailCheck, Headset } from "lucide-react";
 
 import ContactUsForm from "@/components/forms/contact-us-form";
 import { Badge } from "@/components/ui/badge";
+import translations from "@/lang/en.json";
 
 export default function ContactUsSection() {
   return (
@@ -27,15 +28,13 @@ export default function ContactUsSection() {
           className="p-2 rounded-full bg-background text-sm px-4"
           variant="outline"
         >
-          Contact Us
+{translations.pages.contactUs.badge}
         </Badge>
         <h2 className="text-3xl md:text-4xl font-bold tracking-tight font-secondary mt-4">
-          Get in Touch with Our Team
+{translations.pages.contactUs.title}
         </h2>
         <p className="max-w-4xl text-muted-foreground md:text-lg text-center mt-2">
-          Whether you need product guidance, sales assistance, or customer
-          support we’re ready to help. Connect with the right team and expect a
-          response within 1–2 business days.
+{translations.pages.contactUs.description}
         </p>
       </div>
 
@@ -49,7 +48,7 @@ export default function ContactUsSection() {
           <div className="flex flex-col gap-6 h-full">
             <Card className="flex flex-col flex-grow h-full shadow-lg">
               <CardHeader>
-                <CardTitle className="text-lg">Support Team</CardTitle>
+<CardTitle className="text-lg">{translations.pages.contactUs.supportTeam.title}</CardTitle>
                 <CardDescription>
                   Need help with your account, services, or have technical
                   questions? Our support team is here to assist.
