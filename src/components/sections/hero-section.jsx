@@ -55,10 +55,10 @@ export default function HeroSection() {
               </Link>
             </div>
             <div className="flex items-center justify-center gap-4 mt-6 text-sm text-muted-foreground">
-              <div className="flex items-center gap-1">
+              {/* <div className="flex items-center gap-1">
                 <Check className="size-4 text-primary" />
                 <span>No credit card</span>
-              </div>
+              </div> */}
               <div className="flex items-center gap-1">
                 <Check className="size-4 text-primary" />
                 <span>7-Day free trial</span>

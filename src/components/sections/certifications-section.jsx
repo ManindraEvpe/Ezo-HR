@@ -13,9 +13,9 @@ export default function CertificationsSection() {
       className="container pt-24 flex overflow-hidden flex-wrap lg:flex-nowrap"
       id="certifications"
     >
-      <div className="p-20 border rounded-md rounded-b-none lg:rounded-bl-md lg:rounded-tr-none lg:border-r-0 bg-background">
+      <div className="w-full lg:w-auto p-20 border rounded-md rounded-b-none lg:rounded-bl-md lg:rounded-tr-none lg:border-r-0 bg-background">
         <h4 className="text-3xl md:text-4xl font-bold tracking-tight font-secondary">
-          Our certifications say it all.
+          Certified for Security & Compliance
         </h4>
         <p className="text-muted-foreground md:text-lg">
           We are proud to be certified by leading organizations, ensuring the
@@ -23,7 +23,7 @@ export default function CertificationsSection() {
         </p>
       </div>
       <div
-        className="grid grid-cols-3 grid-rows-2 
+        className="w-full lg:w-auto grid grid-cols-1 lg:grid-cols-3 
       [&>div]:flex-center
       [&>div]:p-8
       [&>div>img]:grayscale
@@ -33,7 +33,7 @@ export default function CertificationsSection() {
       [&>div>img]:cursor-pointer
       "
       >
-        <div className="col-span-3 flex-center border border-t-0 lg:border-t lg:rounded-r-md lg:rounded-br-none bg-background">
+        {/* <div className="col-span-3 flex-center border border-t-0 lg:border-t lg:rounded-r-md lg:rounded-br-none bg-background">
           <Dialog>
             <DialogTrigger>
               <img src="/dun-img.png" className="h-12" alt="" />
@@ -48,8 +48,8 @@ export default function CertificationsSection() {
               <img src="/dun-cert.png" alt="" />
             </DialogContent>
           </Dialog>
-        </div>
-        <div className="border border-t-0 border-r-0 rounded-bl-md lg:rounded-bl-none bg-background">
+        </div> */}
+        <div className="border border-t-0 border-l-0 border-r-0 lg:border-l lg:border-r-0 lg:border-t lg:rounded-tl-none bg-background flex-center">
           <Dialog>
             <DialogTrigger>
               <img src="/iso-img.png" className="h-28" alt="" />
@@ -62,7 +62,7 @@ export default function CertificationsSection() {
             </DialogContent>
           </Dialog>
         </div>
-        <div className="border border-r-0 border-t-0 bg-background">
+        <div className="border border-t-0 border-l-0 border-r-0 lg:border-l lg:border-r-0 lg:border-t bg-background flex-center">
           <Dialog>
             <DialogTrigger>
               <img src="/iso-2-img.png" className="h-28" alt="" />
@@ -75,7 +75,7 @@ export default function CertificationsSection() {
             </DialogContent>
           </Dialog>
         </div>
-        <div className="border border-t-0 rounded-br-md bg-background">
+        <div className="border border-t-0 border-l-0 border-r-0 lg:border-l lg:border-r lg:border-t rounded-b-md lg:rounded-bl-none lg:rounded-r-md bg-background flex-center">
           <Dialog>
             <DialogTrigger>
               <img src="/nqcab-img.png" className="h-28" alt="" />
